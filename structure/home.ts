@@ -3,4 +3,4 @@ export const home = (S) =>
     .id('home')
     .schemaType('home')
     .title('Home')
-    .child(S.editor().id('home').schemaType('home').documentId('siteSettings'))
+    .child(S.editor().id('home').schemaType('home').documentId('home'))

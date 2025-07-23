@@ -5,13 +5,13 @@ export default {
   fields: [
     {
       name: 'title',
-      title: 'Site Title',
-      type: 'string'
+      title: 'Title',
+      type: 'string',
     },
     {
       name: 'description',
-      title: 'Site Description',
-      type: 'text'
-    }
-  ]
+      title: 'Description',
+      type: 'text',
+    },
+  ],
 }
