@@ -1,4 +1,5 @@
 import {defineDocuments, defineLocations} from 'sanity/presentation'
+import {baseLanguage} from '../utils/localization'
 
 export const locations = {
   home: defineLocations({
@@ -10,7 +11,7 @@ export const locations = {
     ],
   }),
   page: defineLocations({
-    select: {title: 'title', slug: 'slug.current'},
+    select: {title: `title.${baseLanguage.id}`, slug: `slug.${baseLanguage.id}.current`},
     resolve: (doc) => ({
       locations: [{title: doc?.title, href: `/${doc?.slug}`}],
     }),

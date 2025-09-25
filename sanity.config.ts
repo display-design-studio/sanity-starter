@@ -7,8 +7,13 @@ import {schemaTypes} from './schemaTypes'
 import {structure} from './structure/index'
 import {locations, mainDocuments} from './presentation/resolve'
 
+//Utils
+import {projectId, dataset} from './utils/env'
+
 //Plugins
 import {media} from 'sanity-plugin-media'
+import {languageFilter} from '@sanity/language-filter'
+import {baseLanguage, supportedLanguages} from './utils/localization'
 
 const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
 const singletonTypes = new Set(['home'])
@@ -16,9 +21,8 @@ const singletonTypes = new Set(['home'])
 export default defineConfig({
   name: 'default',
   title: 'Sanity Starter',
-  projectId: process.env.SANITY_STUDIO_ID,
-  dataset: 'production',
-
+  projectId,
+  dataset,
   plugins: [
     structureTool({
       structure,
@@ -35,6 +39,12 @@ export default defineConfig({
         mainDocuments,
       },
     }),
+    languageFilter({
+      supportedLanguages,
+      defaultLanguages: [baseLanguage?.id],
+      filterField: (enclosingType, member, selectedLanguageIds) =>
+        !enclosingType.name.startsWith('locale') || selectedLanguageIds.includes(member.name),
+    }),
   ],
 
   schema: {
@@ -47,5 +57,13 @@ export default defineConfig({
       singletonTypes.has(context.schemaType)
         ? input.filter(({action}) => action && singletonActions.has(action))
         : input,
+  },
+
+  scheduledPublishing: {
+    enabled: false,
+  },
+
+  tasks: {
+    enabled: false,
   },
 })
