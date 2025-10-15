@@ -11,7 +11,7 @@ import {locations, mainDocuments} from './presentation/resolve'
 import {projectId, dataset} from './utils/env'
 
 //Plugins
-import {media} from 'sanity-plugin-media'
+import {media} from 'sanity-plugin-media-i18n'
 import {languageFilter} from '@sanity/language-filter'
 import {baseLanguage, supportedLanguages} from './utils/localization'
 
