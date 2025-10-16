@@ -1,4 +1,6 @@
-export const home = (S) =>
+import {StructureBuilder} from 'sanity/structure'
+
+export const home = (S: StructureBuilder) =>
   S.listItem()
     .id('home')
     .schemaType('home')
