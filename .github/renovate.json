@@ -1,0 +1,14 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["github>sanity-io/renovate-config"],
+    "ignorePresets": ["github>sanity-io/renovate-config:group-non-major"],
+    "dependencyDashboardApproval": false,
+    "packageRules": [
+      {
+        "matchDepTypes": ["devDependencies"],
+        "updateTypes": ["minor", "patch"],
+        "automerge": true
+      }
+    ]
+  }
+  
