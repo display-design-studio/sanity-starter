@@ -17,18 +17,18 @@
   ],
   "dependencies": {
     "@sanity/language-filter": "^4.0.6",
-    "@sanity/vision": "^5.6.0",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "sanity": "^5.6.0",
+    "@sanity/vision": "^5.9.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "sanity": "^5.9.0",
     "sanity-plugin-media-i18n": "^2.3.6",
-    "styled-components": "^6.2.0"
+    "styled-components": "^6.3.9"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^5.0.2",
-    "@types/react": "^19.2.7",
+    "@types/react": "^19.2.14",
     "eslint": "^9.39.2",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.1",
     "typescript": "^5.9.3"
   },
   "prettier": {
