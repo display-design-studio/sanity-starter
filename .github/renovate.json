@@ -4,5 +4,14 @@
   "dependencyDashboard": true,
   "dependencyDashboardApproval": false,
   "schedule": ["before 3am on Monday"],
-  "timezone": "Europe/Rome"
+  "timezone": "Europe/Rome",
+  "packageRules": [
+    {
+      "description": "Auto-merge patch and minor updates for Sanity core packages",
+      "matchPackagePatterns": ["^sanity$", "^@sanity/"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true,
+      "automergeType": "pr"
+    }
+  ]
 }
