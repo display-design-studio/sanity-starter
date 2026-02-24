@@ -1,0 +1,58 @@
+diff --git a/vendor/skills/skills/content-modeling-best-practices/SKILL.md b/.claude/skills/content-modeling-best-practices/SKILL.md
+index 5aba9bc..0383c9a 100644
+--- a/vendor/skills/skills/content-modeling-best-practices/SKILL.md
++++ b/.claude/skills/content-modeling-best-practices/SKILL.md
+@@ -1,13 +1,6 @@
+ ---
+ name: content-modeling-best-practices
+-description: >-
+-  Structured content modeling principles with Sanity-specific guidance. Use
+-  when designing or reviewing content schemas, document types, field structures,
+-  or content architecture — including decisions around references vs embedding,
+-  content reuse, taxonomy, page builders, multi-channel delivery, or
+-  refactoring existing schemas. Trigger when the user mentions schema design,
+-  content model, document types, content structure, headless CMS architecture,
+-  or asks how to model any content type.
++description: General principles for structured content modeling that apply across CMSs, with Sanity-specific guidance. Use when designing content schemas, planning content architecture, or evaluating content reuse strategies.
+ license: MIT
+ metadata:
+   author: sanity
+diff --git a/vendor/skills/skills/content-experimentation-best-practices/SKILL.md b/.claude/skills/content-experimentation-best-practices/SKILL.md
+index 7e9160f..1027475 100644
+--- a/vendor/skills/skills/content-experimentation-best-practices/SKILL.md
++++ b/.claude/skills/content-experimentation-best-practices/SKILL.md
+@@ -1,13 +1,6 @@
+ ---
+ name: content-experimentation-best-practices
+-description: >-
+-  A/B testing and content experimentation methodology for data-driven
+-  optimization. Use when setting up A/B tests, multivariate tests, or
+-  experimentation infrastructure — including experiment design, statistical
+-  significance, conversion rate optimization (CRO), feature flags, or
+-  integrating experiments with a CMS. Trigger when the user mentions A/B test,
+-  split test, variant, experiment, CRO, conversion rate, statistical
+-  significance, feature flag, or asks how to test or measure content changes.
++description: A/B testing and content experimentation methodology for data-driven content optimization. Use when implementing experiments, analyzing results, or building experimentation infrastructure.
+ license: MIT
+ metadata:
+   author: sanity
+diff --git a/vendor/skills/skills/seo-aeo-best-practices/SKILL.md b/.claude/skills/seo-aeo-best-practices/SKILL.md
+index 44d5e29..75e2c66 100644
+--- a/vendor/skills/skills/seo-aeo-best-practices/SKILL.md
++++ b/.claude/skills/seo-aeo-best-practices/SKILL.md
+@@ -1,14 +1,6 @@
+ ---
+ name: seo-aeo-best-practices
+-description: >-
+-  SEO and AEO (Answer Engine Optimization) best practices covering EEAT,
+-  structured data, and technical SEO. Use when implementing meta tags, Open
+-  Graph, JSON-LD, sitemaps, robots.txt, canonical URLs, or optimizing content
+-  for Google, AI assistants (ChatGPT, Perplexity), or featured snippets.
+-  Trigger when the user mentions SEO, AEO, EEAT, structured data, schema.org,
+-  JSON-LD, meta tags, Open Graph, sitemap, robots.txt, canonical, indexing,
+-  search ranking, or asks how to make content discoverable by search engines
+-  or AI tools.
++description: SEO and AEO (Answer Engine Optimization) best practices including EEAT principles, structured data, and technical SEO. Use when implementing metadata, sitemaps, structured data, or optimizing content for search engines and AI assistants.
+ license: MIT
+ metadata:
+   author: sanity
