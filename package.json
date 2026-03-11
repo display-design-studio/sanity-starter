@@ -7,10 +7,11 @@
   "scripts": {
     "dev": "sanity dev",
     "start": "sanity start",
-    "build": "sanity build && bun run generate-types",
+    "build": "sanity build && bun run typegen",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
-    "generate-types": "npx sanity schema extract --path types/schema.json && npx sanity typegen generate"
+    "typegen": "sanity schema extract --path types/schema.json && sanity typegen generate",
+    "typegen:watch": "sanity typegen generate --watch"
   },
   "keywords": [
     "sanity"

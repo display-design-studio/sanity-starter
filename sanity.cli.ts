@@ -7,7 +7,9 @@ export default defineCliConfig({
   },
   deployment: {autoUpdates: true},
   typegen: {
+    enabled: true,
     path: [
+      './queries/**/*.{ts,tsx,js,jsx}',
       './src/**/*.{ts,tsx,js,jsx}',
       '../src/**/*.{ts,tsx,js,jsx}',
       '../app/**/*.{ts,js}',
