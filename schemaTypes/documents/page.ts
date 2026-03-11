@@ -1,5 +1,5 @@
-import {defineType, defineField} from 'sanity'
-import {baseLanguage} from '../../utils/localization'
+import { defineField, defineType } from 'sanity'
+import { baseLanguage } from '../../utils/localization'
 
 export const page = defineType({
   name: 'page',
@@ -15,6 +15,11 @@ export const page = defineType({
       type: 'localeString',
     }),
     defineField({
+      name: 'slug',
+      title: 'Slug',
+      type: 'localeSlug',
+    }),
+    defineField({
       name: 'description',
       title: 'Description',
       type: 'localeText',
@@ -24,20 +29,16 @@ export const page = defineType({
       title: 'Content',
       type: 'localeBlock',
     }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'localeSlug',
-    }),
   ],
   preview: {
     select: {
-      title: `title.${baseLanguage.id}`,
+      title: `title.${baseLanguage?.id}`,
+      slug: `slug.["${baseLanguage?.id}"].current`,
     },
-    prepare(selection: any) {
-      const {title} = selection
+    prepare({title, slug}) {
       return {
         title,
+        subtitle: `/${slug}`,
       }
     },
   },

@@ -1,19 +1,19 @@
-import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-import {visionTool} from '@sanity/vision'
-import {presentationTool} from 'sanity/presentation'
+import { visionTool } from '@sanity/vision'
+import { defineConfig } from 'sanity'
+import { presentationTool } from 'sanity/presentation'
+import { structureTool } from 'sanity/structure'
 
-import {schemaTypes} from './schemaTypes'
-import {structure} from './structure/index'
-import {locations, mainDocuments} from './presentation/resolve'
+import { locations, mainDocuments } from './presentation/resolve'
+import { schemaTypes } from './schemaTypes'
+import { structure } from './structure/index'
 
 //Utils
-import {projectId, dataset} from './utils/env'
+import { dataset, projectId } from './utils/env'
 
 //Plugins
-import {media} from 'sanity-plugin-media-i18n'
-import {languageFilter} from '@sanity/language-filter'
-import {baseLanguage, supportedLanguages} from './utils/localization'
+import { languageFilter } from '@sanity/language-filter'
+import { media } from 'sanity-plugin-media-i18n'
+import { baseLanguage, supportedLanguages } from './utils/localization'
 
 const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
 const singletonTypes = new Set(['home'])
@@ -63,7 +63,15 @@ export default defineConfig({
     enabled: false,
   },
 
+  scheduledDrafts: {
+    enabled: false,
+  },
+
   tasks: {
+    enabled: false,
+  },
+
+  releases: {
     enabled: false,
   },
 })

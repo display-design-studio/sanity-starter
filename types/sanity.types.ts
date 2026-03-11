@@ -12,34 +12,11 @@
  * ---------------------------------------------------------------------------------
  */
 
-// Source: schema.json
-export type Page = {
-  _id: string
-  _type: 'page'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  title?: LocaleString
-  description?: LocaleText
-  content?: LocaleBlock
-  slug?: LocaleSlug
-}
-
+// Source: types/schema.json
 export type LocaleSlug = {
   _type: 'localeSlug'
   en?: Slug
   it?: Slug
-}
-
-export type Home = {
-  _id: string
-  _type: 'home'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  title?: LocaleString
-  description?: LocaleText
-  content?: LocaleBlock
 }
 
 export type LocaleBlock = {
@@ -94,6 +71,35 @@ export type LocaleString = {
   it?: string
 }
 
+export type Page = {
+  _id: string
+  _type: 'page'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  title?: LocaleString
+  description?: LocaleText
+  content?: LocaleBlock
+  slug?: LocaleSlug
+}
+
+export type Slug = {
+  _type: 'slug'
+  current?: string
+  source?: string
+}
+
+export type Home = {
+  _id: string
+  _type: 'home'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  title?: LocaleString
+  description?: LocaleText
+  content?: LocaleBlock
+}
+
 export type MediaTag = {
   _id: string
   _type: 'media.tag'
@@ -127,6 +133,18 @@ export type SanityImageDimensions = {
   height?: number
   width?: number
   aspectRatio?: number
+}
+
+export type SanityImageMetadata = {
+  _type: 'sanity.imageMetadata'
+  location?: Geopoint
+  dimensions?: SanityImageDimensions
+  palette?: SanityImagePalette
+  lqip?: string
+  blurHash?: string
+  thumbHash?: string
+  hasAlpha?: boolean
+  isOpaque?: boolean
 }
 
 export type SanityImageHotspot = {
@@ -167,6 +185,13 @@ export type SanityFileAsset = {
   source?: SanityAssetSourceData
 }
 
+export type SanityAssetSourceData = {
+  _type: 'sanity.assetSourceData'
+  name?: string
+  id?: string
+  url?: string
+}
+
 export type SanityImageAsset = {
   _id: string
   _type: 'sanity.imageAsset'
@@ -190,17 +215,6 @@ export type SanityImageAsset = {
   source?: SanityAssetSourceData
 }
 
-export type SanityImageMetadata = {
-  _type: 'sanity.imageMetadata'
-  location?: Geopoint
-  dimensions?: SanityImageDimensions
-  palette?: SanityImagePalette
-  lqip?: string
-  blurHash?: string
-  hasAlpha?: boolean
-  isOpaque?: boolean
-}
-
 export type Geopoint = {
   _type: 'geopoint'
   lat?: number
@@ -208,36 +222,24 @@ export type Geopoint = {
   alt?: number
 }
 
-export type Slug = {
-  _type: 'slug'
-  current?: string
-  source?: string
-}
-
-export type SanityAssetSourceData = {
-  _type: 'sanity.assetSourceData'
-  name?: string
-  id?: string
-  url?: string
-}
-
 export type AllSanitySchemaTypes =
-  | Page
   | LocaleSlug
-  | Home
   | LocaleBlock
   | LocaleText
   | LocaleString
+  | Page
+  | Slug
+  | Home
   | MediaTag
   | SanityImagePaletteSwatch
   | SanityImagePalette
   | SanityImageDimensions
+  | SanityImageMetadata
   | SanityImageHotspot
   | SanityImageCrop
   | SanityFileAsset
-  | SanityImageAsset
-  | SanityImageMetadata
-  | Geopoint
-  | Slug
   | SanityAssetSourceData
+  | SanityImageAsset
+  | Geopoint
+
 export declare const internalGroqTypeReferenceTo: unique symbol
