@@ -9,6 +9,5 @@ export const supportedLanguages: supportedLanguage[] = [
   {id: 'it', title: 'Italian'},
 ]
 
-export const baseLanguage: supportedLanguage = supportedLanguages.find(
-  (l: supportedLanguage) => l.isDefault,
-)
+export const baseLanguage: supportedLanguage =
+  supportedLanguages.find((l: supportedLanguage) => l.isDefault) || supportedLanguages[0]
