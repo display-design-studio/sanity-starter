@@ -6,10 +6,10 @@
       "name": "sanity-starter",
       "dependencies": {
         "@sanity/language-filter": "^4.1.0",
-        "@sanity/vision": "^5.14.1",
+        "@sanity/vision": "^5.17.1",
         "react": "^19.2.4",
         "react-dom": "^19.2.4",
-        "sanity": "^5.14.1",
+        "sanity": "^5.17.1",
         "sanity-plugin-media-i18n": "^2.3.6",
         "styled-components": "^6.3.11",
       },
@@ -531,7 +531,7 @@
 
     "@pnpm/npm-conf": ["@pnpm/npm-conf@3.0.2", "", { "dependencies": { "@pnpm/config.env-replace": "^1.1.0", "@pnpm/network.ca-file": "^1.0.1", "config-chain": "^1.1.11" } }, "sha512-h104Kh26rR8tm+a3Qkc5S4VLYint3FE48as7+/5oCEcKR2idC/pF1G6AhIXKI+eHPJa/3J9i5z0Al47IeGHPkA=="],
 
-    "@portabletext/editor": ["@portabletext/editor@6.3.2", "", { "dependencies": { "@juggle/resize-observer": "^3.4.0", "@portabletext/html": "^1.0.0", "@portabletext/keyboard-shortcuts": "^2.1.2", "@portabletext/markdown": "^1.1.4", "@portabletext/patches": "^2.0.4", "@portabletext/schema": "^2.1.1", "@portabletext/to-html": "^5.0.2", "@xstate/react": "^6.1.0", "debug": "^4.4.3", "scroll-into-view-if-needed": "^3.1.0", "xstate": "^5.28.0" }, "peerDependencies": { "react": "^19.2.3" } }, "sha512-0M5IqEhxQHxC++uT5UnrAzgfHjKr8LpotrKzYcbdaqgOfac/SiCfOdFudlvhFWxExTp8r+YQFUM377vueGm8Yw=="],
+    "@portabletext/editor": ["@portabletext/editor@6.5.0", "", { "dependencies": { "@juggle/resize-observer": "^3.4.0", "@portabletext/html": "^1.0.0", "@portabletext/keyboard-shortcuts": "^2.1.2", "@portabletext/markdown": "^1.1.4", "@portabletext/patches": "^2.0.4", "@portabletext/schema": "^2.1.1", "@portabletext/to-html": "^5.0.2", "@xstate/react": "^6.1.0", "debug": "^4.4.3", "scroll-into-view-if-needed": "^3.1.0", "xstate": "^5.28.0" }, "peerDependencies": { "react": "^19.2.3" } }, "sha512-eP129GF8VH/AFLW2ZX/a+AQ/q+wHCKXVUuCQGYuW/k/V79XavM3VJ6WtrYRg+RARVPcucOVtZwixEVCR5wZtBg=="],
 
     "@portabletext/html": ["@portabletext/html@1.0.0", "", { "dependencies": { "@portabletext/schema": "^2.1.1", "@vercel/stega": "1.0.0" } }, "sha512-JXbVXj10yAbcw+1UvyaEQWGvOTJAqc4l85HbdZ34HNI4GOHuP6wr42onyrjbGlI92kY6l3MGR+dd9lSboTv8pw=="],
 
@@ -541,17 +541,17 @@
 
     "@portabletext/patches": ["@portabletext/patches@2.0.4", "", { "dependencies": { "@sanity/diff-match-patch": "^3.2.0" } }, "sha512-dz2tR921LMvz3tAlfAB5ehJhztGCERFs0j5jEha2Vkq9UAs9iuCxNGlf7C3d2f9pGGBpxOF4WBZgpZNjB84vrQ=="],
 
-    "@portabletext/plugin-character-pair-decorator": ["@portabletext/plugin-character-pair-decorator@7.0.18", "", { "dependencies": { "@xstate/react": "^6.1.0", "remeda": "^2.32.0", "xstate": "^5.28.0" }, "peerDependencies": { "@portabletext/editor": "^6.3.2", "react": "^19.2" } }, "sha512-DnmpNZ3jLhFSb54dyb/7NKGsepIDpIcIVKBM9oE2dit3OnGpoV9VJKGDJGdW9xFzx5F2OHA5GeRFTmMGImG+Ew=="],
+    "@portabletext/plugin-character-pair-decorator": ["@portabletext/plugin-character-pair-decorator@7.0.20", "", { "dependencies": { "@xstate/react": "^6.1.0", "remeda": "^2.32.0", "xstate": "^5.28.0" }, "peerDependencies": { "@portabletext/editor": "^6.5.0", "react": "^19.2" } }, "sha512-oCNDHUbo8kfWTFq00Udy+Y20l5E1NoNGcWAafiBj/bmYVZaTs//z+o4orYZ99uOVOeyC09VZgYSJjRopXRSj0w=="],
 
-    "@portabletext/plugin-input-rule": ["@portabletext/plugin-input-rule@4.0.18", "", { "dependencies": { "@xstate/react": "^6.1.0", "xstate": "^5.28.0" }, "peerDependencies": { "@portabletext/editor": "^6.3.2", "react": "^19.2" } }, "sha512-lyTlrPgOKzsJgiebiZL7b2vcM9aclkgEN/UoYgKr/ZXqiHG8dhg9GmnEB8UeU9Zx4NWYZq0ZJBQcudEpaPSOEA=="],
+    "@portabletext/plugin-input-rule": ["@portabletext/plugin-input-rule@4.0.20", "", { "dependencies": { "@xstate/react": "^6.1.0", "xstate": "^5.28.0" }, "peerDependencies": { "@portabletext/editor": "^6.5.0", "react": "^19.2" } }, "sha512-QtyCmxbhAEbVceJpLwCankPKVWZaJZN6vFweG4Ie2g7AZ1syx7b7gFsTh5OCXHH3NQ+npG9W+NlD7Np+emz0fg=="],
 
-    "@portabletext/plugin-markdown-shortcuts": ["@portabletext/plugin-markdown-shortcuts@7.0.18", "", { "dependencies": { "@portabletext/plugin-character-pair-decorator": "^7.0.18", "@portabletext/plugin-input-rule": "^4.0.18" }, "peerDependencies": { "@portabletext/editor": "^6.3.2", "react": "^19.2" } }, "sha512-efYESxiesluWtIKSmRMnTc+43sxGC/JQhGK6pVBDlVn50McCBBl4ZyFwJehmPjZ9FSYbLNq4GWF6MxDgtalG1Q=="],
+    "@portabletext/plugin-markdown-shortcuts": ["@portabletext/plugin-markdown-shortcuts@7.0.20", "", { "dependencies": { "@portabletext/plugin-character-pair-decorator": "^7.0.20", "@portabletext/plugin-input-rule": "^4.0.20" }, "peerDependencies": { "@portabletext/editor": "^6.5.0", "react": "^19.2" } }, "sha512-cY/dWTtuWXXTentqlefsThdYKleVXXtd81zwBGcKL+hZOaA1wVwGAoiUq7TLC9zqRjqvlEpY40wW+uS/ZSJMjg=="],
 
-    "@portabletext/plugin-one-line": ["@portabletext/plugin-one-line@6.0.18", "", { "peerDependencies": { "@portabletext/editor": "^6.3.2", "react": "^19.2" } }, "sha512-3HjBNJdOjgtbZ7J9HrDLmXPhSJ4Qa1Xy/rU3FG2qHbTjrtOwO09+qCrRZEKBWZwE/pnhjKVpDZyX2eM73Fpp0w=="],
+    "@portabletext/plugin-one-line": ["@portabletext/plugin-one-line@6.0.20", "", { "peerDependencies": { "@portabletext/editor": "^6.5.0", "react": "^19.2" } }, "sha512-DlYMoSI8EzOiEu9jybOVX/UGtWXpjLC8iSX6P3pgKK7DIcELn80UV/zouQoOqTcohGbgEgO3ThHE9Hqzub0HyA=="],
 
-    "@portabletext/plugin-paste-link": ["@portabletext/plugin-paste-link@3.0.18", "", { "peerDependencies": { "@portabletext/editor": "^6.3.2", "react": "^19.2" } }, "sha512-hiiAJRr7SVcujS1VSXG5G+QyVdAzjI4aKzX0sTd/dEfhKDhqi/2m2WQSw3StYyS8xkfbcWbiGby0QyI5r6EN+w=="],
+    "@portabletext/plugin-paste-link": ["@portabletext/plugin-paste-link@3.0.20", "", { "peerDependencies": { "@portabletext/editor": "^6.5.0", "react": "^19.2" } }, "sha512-0VwbquFwxIK7g8BlJxejLwviM6LUzEBsiS8Up0pO1ET/9e506kvZkAp6Xuabax1Fsb6o9CEzQmwvAU4R60DaxA=="],
 
-    "@portabletext/plugin-typography": ["@portabletext/plugin-typography@7.0.18", "", { "dependencies": { "@portabletext/plugin-input-rule": "^4.0.18" }, "peerDependencies": { "@portabletext/editor": "^6.3.2", "react": "^19.2" } }, "sha512-4VT9vuooB58t7em5pO9ZiuoVIIaqhlPKLm6rrLlNMLLHqfhbFamX5rn0MakfDgsF2JjV6jaZrSC+3uWXLC3jiQ=="],
+    "@portabletext/plugin-typography": ["@portabletext/plugin-typography@7.0.20", "", { "dependencies": { "@portabletext/plugin-input-rule": "^4.0.20" }, "peerDependencies": { "@portabletext/editor": "^6.5.0", "react": "^19.2" } }, "sha512-tz/uPip/s6XEAHon7WXejc1vyuF/scmrVwOiszRz4gedpFU+B2Wm0x/dDBBtDTgVLIyQbz6MP2uhq6XPmq5Zhg=="],
 
     "@portabletext/react": ["@portabletext/react@6.0.3", "", { "dependencies": { "@portabletext/toolkit": "^5.0.2", "@portabletext/types": "^4.0.2" }, "peerDependencies": { "react": "^18.2 || ^19" } }, "sha512-xkpykEYKdyR8DJq1oTGKhmwQMqIta8OEHAEMq1EQ5kGOdnVU4ZzU6c+1EZNgyNFpSZs/25ee3kA4Te9ybbQCyA=="],
 
@@ -627,15 +627,15 @@
 
     "@sanity/asset-utils": ["@sanity/asset-utils@2.3.0", "", {}, "sha512-dlEmALjQ5iyQG0O8ZVmkkE3wUYCKfRmiyMvuuGN5SF9buAHxmseBOKJ/Iy2DU/8ef70mtUXlzeCRSlTN/nmZsg=="],
 
-    "@sanity/bifur-client": ["@sanity/bifur-client@0.4.1", "", { "dependencies": { "nanoid": "^3.1.12", "rxjs": "^7.0.0" } }, "sha512-mHM8WR7pujbIw2qxuV0lzinS1izOoyLza/ejWV6quITTLpBhUoPIQGPER3Ar0SON5JV0VEEqkJGa1kjiYYgx2w=="],
+    "@sanity/bifur-client": ["@sanity/bifur-client@1.0.0", "", { "dependencies": { "nanoid": "^5.1.6", "rxjs": "^7.0.0" } }, "sha512-4cy7RytpkR0wm08EzEx9tL3XwoH7FqnAb9aUNskLmwpWzkFSs34amh19BvUq1TujmEqwCGLJARa+QWpOCoWpjw=="],
 
     "@sanity/blueprints": ["@sanity/blueprints@0.13.1", "", {}, "sha512-ecpew4NrUeB5zIQCu0VtgWBeoX2oU+UUyEya1qyt7qqpovsF881gd37CV23kjodJumuOXxOQT4sY2GK+gD+TpQ=="],
 
     "@sanity/blueprints-parser": ["@sanity/blueprints-parser@0.4.0", "", {}, "sha512-zsWRKubWZnRwuAnRUC4UqeIJg6SpIrz6ft20FzfhI2mAqaxPky8rFh18/x96+5HpNv5ww/B9zU359IJCJMWNkw=="],
 
-    "@sanity/cli": ["@sanity/cli@6.1.3", "", { "dependencies": { "@oclif/core": "^4.8.3", "@oclif/plugin-help": "^6.2.37", "@oclif/plugin-not-found": "^3.2.74", "@sanity/cli-core": "1.1.1", "@sanity/client": "^7.17.0", "@sanity/codegen": "^6.0.0", "@sanity/descriptors": "^1.3.0", "@sanity/export": "^6.1.0", "@sanity/generate-help-url": "^4.0.0", "@sanity/id-utils": "^1.0.0", "@sanity/import": "^5.0.1", "@sanity/migrate": "^6.0.0", "@sanity/runtime-cli": "^14.5.0", "@sanity/schema": "^5.15.0", "@sanity/telemetry": "^0.8.1", "@sanity/template-validator": "^3.0.0", "@sanity/types": "^5.15.0", "@sanity/ui": "^3.1.13", "@sanity/worker-channels": "^2.0.0", "@vercel/frameworks": "3.8.4", "@vitejs/plugin-react": "^5.1.4", "chokidar": "^5.0.0", "console-table-printer": "^2.15.0", "date-fns": "^4.1.0", "debug": "^4.4.3", "dotenv": "^17.2.3", "eventsource": "^4.1.0", "execa": "^9.6.0", "form-data": "^4.0.5", "get-latest-version": "^6.0.1", "gunzip-maybe": "^1.4.2", "import-meta-resolve": "^4.2.0", "is-installed-globally": "^1.0.0", "isomorphic-dompurify": "^2.32.0", "json5": "^2.2.3", "jsonc-parser": "^3.3.1", "lodash-es": "^4.17.23", "minimist": "^1.2.8", "nanoid": "^5.1.5", "node-html-parser": "^7.0.1", "oneline": "^2.0.0", "open": "^11.0.0", "p-map": "^7.0.3", "package-directory": "^8.1.0", "peek-stream": "^1.1.3", "picomatch": "^4.0.3", "pluralize-esm": "^9.0.5", "preferred-pm": "^4.1.1", "pretty-ms": "^9.3.0", "promise-props-recursive": "^2.0.2", "react": "^19.2.4", "react-dom": "^19.2.4", "react-is": "^19.2.4", "read-package-up": "^12.0.0", "rimraf": "^6.0.1", "rxjs": "^7.8.2", "semver": "^7.7.4", "smol-toml": "^1.6.0", "tar": "^7.5.9", "tar-fs": "^3.1.0", "tar-stream": "^3.1.7", "tinyglobby": "^0.2.15", "tsx": "^4.21.0", "typeid-js": "^1.2.0", "vite": "^7.3.1", "which": "^6.0.1", "yaml": "^2.8.2", "zod": "^4.3.6" }, "bin": { "sanity": "bin/run.js" } }, "sha512-LGcWBkdDEfmwXpw8CNGl17hZNMsLszcVhgUzvIo+g8fFvfw4nUA4SrVEAP7c+BvYAsKo9tp79QxofTy8No+Qug=="],
+    "@sanity/cli": ["@sanity/cli@6.1.7", "", { "dependencies": { "@oclif/core": "^4.8.4", "@oclif/plugin-help": "^6.2.37", "@oclif/plugin-not-found": "^3.2.74", "@sanity/cli-core": "1.1.2", "@sanity/client": "^7.17.0", "@sanity/codegen": "^6.0.1", "@sanity/descriptors": "^1.3.0", "@sanity/export": "^6.1.0", "@sanity/generate-help-url": "^4.0.0", "@sanity/id-utils": "^1.0.0", "@sanity/import": "^5.0.1", "@sanity/migrate": "^6.0.0", "@sanity/runtime-cli": "^14.5.0", "@sanity/schema": "^5.16.0", "@sanity/telemetry": "^0.8.1", "@sanity/template-validator": "^3.0.0", "@sanity/types": "^5.16.0", "@sanity/ui": "^3.1.14", "@sanity/worker-channels": "^2.0.0", "@vercel/frameworks": "3.8.4", "@vitejs/plugin-react": "^5.2.0", "chokidar": "^5.0.0", "console-table-printer": "^2.15.0", "date-fns": "^4.1.0", "debug": "^4.4.3", "dotenv": "^17.2.3", "eventsource": "^4.1.0", "execa": "^9.6.0", "form-data": "^4.0.5", "get-latest-version": "^6.0.1", "gunzip-maybe": "^1.4.2", "import-meta-resolve": "^4.2.0", "is-installed-globally": "^1.0.0", "isomorphic-dompurify": "^2.32.0", "json5": "^2.2.3", "jsonc-parser": "^3.3.1", "lodash-es": "^4.17.23", "minimist": "^1.2.8", "nanoid": "^5.1.5", "node-html-parser": "^7.0.1", "oneline": "^2.0.0", "open": "^11.0.0", "p-map": "^7.0.3", "package-directory": "^8.1.0", "peek-stream": "^1.1.3", "picomatch": "^4.0.3", "pluralize-esm": "^9.0.5", "preferred-pm": "^4.1.1", "pretty-ms": "^9.3.0", "promise-props-recursive": "^2.0.2", "react": "^19.2.4", "react-dom": "^19.2.4", "react-is": "^19.2.4", "read-package-up": "^12.0.0", "rimraf": "^6.0.1", "rxjs": "^7.8.2", "semver": "^7.7.4", "smol-toml": "^1.6.0", "tar": "^7.5.9", "tar-fs": "^3.1.0", "tar-stream": "^3.1.7", "tinyglobby": "^0.2.15", "tsx": "^4.21.0", "typeid-js": "^1.2.0", "vite": "^7.3.1", "which": "^6.0.1", "yaml": "^2.8.2", "zod": "^4.3.6" }, "bin": { "sanity": "bin/run.js" } }, "sha512-FchdQ1cqEjy7epyu4LVSVRK5uflD8UdYO5Pp+agCsmzowdEEyetDDnZOc1Qrsvj1dNHAGUuFRut2zuVXelyktQ=="],
 
-    "@sanity/cli-core": ["@sanity/cli-core@1.1.1", "", { "dependencies": { "@inquirer/prompts": "^8.3.0", "@oclif/core": "^4.8.3", "@rexxars/jiti": "^2.6.2", "@sanity/client": "^7.17.0", "babel-plugin-react-compiler": "^1.0.0", "boxen": "^8.0.1", "configstore": "^7.0.0", "debug": "^4.4.3", "get-it": "^8.7.0", "get-tsconfig": "^4.13.6", "import-meta-resolve": "^4.2.0", "jsdom": "^28.1.0", "json-lexer": "^1.2.0", "log-symbols": "^7.0.1", "ora": "^9.0.0", "read-package-up": "^12.0.0", "rxjs": "^7.8.2", "tsx": "^4.21.0", "vite": "^7.3.1", "vite-node": "^5.3.0", "zod": "^4.3.6" }, "peerDependencies": { "@sanity/telemetry": ">=0.8.1 <0.9.0" } }, "sha512-00/YuUVqvLXgmr3/7d//5ROrsLO56r07MTALqUf+DYlzRw7qN/UyGospmPtiTn+qipf+q8LM1MkFwIPp6rwEVg=="],
+    "@sanity/cli-core": ["@sanity/cli-core@1.1.2", "", { "dependencies": { "@inquirer/prompts": "^8.3.0", "@oclif/core": "^4.8.4", "@rexxars/jiti": "^2.6.2", "@sanity/client": "^7.17.0", "babel-plugin-react-compiler": "^1.0.0", "boxen": "^8.0.1", "configstore": "^7.0.0", "debug": "^4.4.3", "get-it": "^8.7.0", "get-tsconfig": "^4.13.6", "import-meta-resolve": "^4.2.0", "jsdom": "^28.1.0", "json-lexer": "^1.2.0", "log-symbols": "^7.0.1", "ora": "^9.0.0", "read-package-up": "^12.0.0", "rxjs": "^7.8.2", "tsx": "^4.21.0", "vite": "^7.3.1", "vite-node": "^5.3.0", "zod": "^4.3.6" }, "peerDependencies": { "@sanity/telemetry": ">=0.8.1 <0.9.0" } }, "sha512-oT0NtAVgPgj1Q6iYgr942g1vsw8rreeSRJB8tH82ivPqnqCmKWjOrzM8eGnlHcLPFKW9nsQqL8cpq3ec9+1WlA=="],
 
     "@sanity/client": ["@sanity/client@7.17.0", "", { "dependencies": { "@sanity/eventsource": "^5.0.2", "get-it": "^8.7.0", "nanoid": "^3.3.11", "rxjs": "^7.0.0" } }, "sha512-ApwC9MC73A0WkVeD9QEuH1Fw0Odr+hSUlo02zmoqxs4WxOsXXg29fF/DZGnrwWlAdrt5BmHq8HUtY3LPlo3Khg=="],
 
@@ -647,7 +647,7 @@
 
     "@sanity/descriptors": ["@sanity/descriptors@1.3.0", "", { "dependencies": { "sha256-uint8array": "^0.10.7" } }, "sha512-S2KYYGRUVZy+FDjPp3meoyczbCjobSQvZcgNayo3oYlYS9Qz0E+6RezGxi/KOb6iF52Oir3LEXp9SVfIgEwNjg=="],
 
-    "@sanity/diff": ["@sanity/diff@5.15.0", "", { "dependencies": { "@sanity/diff-match-patch": "^3.2.0" } }, "sha512-IEVOz860iLMLcSsZjmCBqIWoCOqpKDuJUGCDC4pBBi9QercVgfM32owi3orhsCFSvL6XRqDlWXIWOhwCXy1m9A=="],
+    "@sanity/diff": ["@sanity/diff@5.17.1", "", { "dependencies": { "@sanity/diff-match-patch": "^3.2.0" } }, "sha512-vDNfQxiN2cSTRbc/8+nlco3fwepigdgRIlEEwuPApkEfR7YtrK00w+cYwvZ8Y4v3VXvlJXBv7Jh6n5pTtB3BrQ=="],
 
     "@sanity/diff-match-patch": ["@sanity/diff-match-patch@3.2.0", "", {}, "sha512-4hPADs0qUThFZkBK/crnfKKHg71qkRowfktBljH2UIxGHHTxIzt8g8fBiXItyCjxkuNy+zpYOdRMifQNv8+Yww=="],
 
@@ -683,11 +683,11 @@
 
     "@sanity/message-protocol": ["@sanity/message-protocol@0.19.0", "", { "dependencies": { "@sanity/comlink": "^4.0.1" } }, "sha512-E++I0J62x0ytvwqQjA1ZkfMR6kfwXNLjIvUzTQ5t3xJQ63LVnaPPToaMxs1ZxSPq4UJREM6oTYclgf6axIQR6g=="],
 
-    "@sanity/migrate": ["@sanity/migrate@5.2.5", "", { "dependencies": { "@oclif/core": "^4.8.0", "@oclif/plugin-help": "^6.2.37", "@sanity/cli-core": "^0.1.0-alpha.12", "@sanity/client": "^7.15.0", "@sanity/mutate": "^0.16.1", "@sanity/types": "^5.10.0", "@sanity/util": "^5.10.0", "arrify": "^2.0.1", "console-table-printer": "^2.15.0", "debug": "^4.4.3", "fast-fifo": "^1.3.2", "get-tsconfig": "^4.13.0", "groq-js": "^1.27.0", "lodash-es": "^4.17.23", "p-map": "^7.0.1", "tsx": "^4.21.0" }, "bin": { "sanity-migrate": "bin/run.js" } }, "sha512-9tgTiRmprtETtrYU21RBGwaP4uxcdtJJmEHqExh2ZYbZdyj4kCr9ToDU1xb4f0+Iq4czkokVCnfIUEeCmImi4A=="],
+    "@sanity/migrate": ["@sanity/migrate@6.0.0", "", { "dependencies": { "@sanity/client": "^7.17.0", "@sanity/mutate": "^0.16.1", "@sanity/types": "^5.14.0", "@sanity/util": "^5.14.0", "arrify": "^2.0.1", "console-table-printer": "^2.15.0", "debug": "^4.4.3", "fast-fifo": "^1.3.2", "groq-js": "^1.29.0", "lodash-es": "^4.17.23", "p-map": "^7.0.1" }, "peerDependencies": { "@oclif/core": "^4.8.1", "@sanity/cli-core": "^1" } }, "sha512-UNerOkcU3EQc8ugCKrujkV8XjGUwgYOymv4wxe8COce+nWABOTXvWByrQZvzkQT4qep4kbfPvx48YeT9XQfEzA=="],
 
     "@sanity/mutate": ["@sanity/mutate@0.16.1", "", { "dependencies": { "@sanity/client": "^7.9.0", "@sanity/diff-match-patch": "^3.2.0", "@sanity/uuid": "^3.0.2", "hotscript": "^1.0.13", "lodash": "^4.17.21", "mendoza": "^3.0.8", "nanoid": "^5.1.3", "rxjs": "^7.8.2" }, "peerDependencies": { "xstate": "^5.19.0" }, "optionalPeers": ["xstate"] }, "sha512-400OooNtiafgJEOCzj0E5atuWlaKp1z6LU/LB/xZUVVywNj3WuT52U6qeVOfGlZeWKhYMCdGFX2ZnMbIrME95w=="],
 
-    "@sanity/mutator": ["@sanity/mutator@5.15.0", "", { "dependencies": { "@sanity/diff-match-patch": "^3.2.0", "@sanity/types": "5.15.0", "@sanity/uuid": "^3.0.2", "debug": "^4.4.3", "lodash-es": "^4.17.22" } }, "sha512-/QermJ+3EEY/eKIh6AoXYpOwNugQMoUAm83jVvR2ntP95WhUECTwnYoaaK0dDbwfrnjneGFEm6MNiYGyslf9iw=="],
+    "@sanity/mutator": ["@sanity/mutator@5.17.1", "", { "dependencies": { "@sanity/diff-match-patch": "^3.2.0", "@sanity/types": "5.17.1", "@sanity/uuid": "^3.0.2", "debug": "^4.4.3", "lodash-es": "^4.17.22" } }, "sha512-dNmCB1MRXtr6UMr+TmoZbt/oIXs1KmwZHBOLnPbSb/jPtGNMBSH6RwEK+kmKAdRixX+PuySttBQuzVy6uS+AlQ=="],
 
     "@sanity/presentation-comlink": ["@sanity/presentation-comlink@2.0.1", "", { "dependencies": { "@sanity/comlink": "^4.0.1", "@sanity/visual-editing-types": "^1.1.8" } }, "sha512-D0S2CfVyda99cd/8SnXxQ2tsVlVuRq4CAOjxRuF53evYmBhpWezSEpWKqAa0e1lunGBKK1EroxmOzb5ofNRwMg=="],
 
@@ -695,7 +695,7 @@
 
     "@sanity/runtime-cli": ["@sanity/runtime-cli@14.5.0", "", { "dependencies": { "@architect/hydrate": "^5.0.2", "@architect/inventory": "^5.0.0", "@inquirer/prompts": "^8.2.1", "@oclif/core": "^4.8.0", "@oclif/plugin-help": "^6.2.37", "@sanity/blueprints": "^0.13.1", "@sanity/blueprints-parser": "^0.4.0", "@sanity/client": "^7.15.0", "adm-zip": "^0.5.16", "array-treeify": "^0.1.5", "cardinal": "^2.1.1", "empathic": "^2.0.0", "eventsource": "^4.1.0", "groq-js": "^1.27.1", "jiti": "^2.6.1", "mime-types": "^3.0.2", "ora": "^9.3.0", "tar-stream": "^3.1.7", "vite": "^7.3.1", "vite-tsconfig-paths": "^6.1.1", "ws": "^8.19.0", "xdg-basedir": "^5.1.0" }, "bin": { "sanity-run": "bin/run.js" } }, "sha512-cbNOKpvuyNlvcQcpMAJ1PtrcqgdyfNGZYsZECbxb5XJKp9LVSkKmZQl0aVWTFvjf1R6RqE60dtBM6NBMesjR3w=="],
 
-    "@sanity/schema": ["@sanity/schema@5.15.0", "", { "dependencies": { "@sanity/descriptors": "^1.3.0", "@sanity/generate-help-url": "^4.0.0", "@sanity/types": "5.15.0", "arrify": "^2.0.1", "groq-js": "^1.27.1", "humanize-list": "^1.0.1", "leven": "^3.1.0", "lodash-es": "^4.17.22", "object-inspect": "^1.13.4" } }, "sha512-FCZjidsbscaIqsQY+xynCphpgi3MJVkHGH/LiltBuOi+JqWxO4mnE1ICn5KXZy/2J7Cj70blCmiO1thjktBXRg=="],
+    "@sanity/schema": ["@sanity/schema@5.17.1", "", { "dependencies": { "@sanity/descriptors": "^1.3.0", "@sanity/generate-help-url": "^4.0.0", "@sanity/types": "5.17.1", "arrify": "^2.0.1", "groq-js": "^1.29.0", "humanize-list": "^1.0.1", "leven": "^3.1.0", "lodash-es": "^4.17.22", "object-inspect": "^1.13.4" } }, "sha512-9iY9m54URaNMTnToMUq4JksVTERZLoXmqi8To8VPg8c173qzYQ89sHwvGWjZqTrdBRP1qg+m4h1KAiu3v8wo/w=="],
 
     "@sanity/sdk": ["@sanity/sdk@2.1.2", "", { "dependencies": { "@sanity/bifur-client": "^0.4.1", "@sanity/client": "^7.2.1", "@sanity/comlink": "^3.0.4", "@sanity/diff-match-patch": "^3.2.0", "@sanity/diff-patch": "^6.0.0", "@sanity/json-match": "^1.0.5", "@sanity/message-protocol": "^0.12.0", "@sanity/mutate": "^0.12.4", "@sanity/types": "^3.83.0", "groq": "3.88.1-typegen-experimental.0", "lodash-es": "^4.17.21", "reselect": "^5.1.1", "rxjs": "^7.8.2", "zustand": "^5.0.4" } }, "sha512-gRBMDNvMUqlFTVoNgOLtcOFDO+e8Fh6v+BrEA4C5F18oi949ObjMmPB2aZMoyP3N3GQuqwVQP6L2PrhH70H7Bw=="],
 
@@ -705,7 +705,7 @@
 
     "@sanity/template-validator": ["@sanity/template-validator@3.0.0", "", { "dependencies": { "@actions/core": "^3.0.0", "@actions/github": "^9.0.0", "yaml": "^2.6.1" }, "bin": { "template-validator": "dist/cli.cjs", "sanity-template-validate": "dist/cli.cjs" } }, "sha512-ej6bdYiMz+M3Z/kYlWnTgGy2KQcYQk3O2dwJog1xSI8l444T3IZSOICr9cFuQL/j41W9HcEHqcbg/LO+31L3KA=="],
 
-    "@sanity/types": ["@sanity/types@5.15.0", "", { "dependencies": { "@sanity/client": "^7.15.0", "@sanity/media-library-types": "^1.2.0" }, "peerDependencies": { "@types/react": "^19.2" } }, "sha512-LdO4IEF8d6h1Rr5tlFCseSJvBl16AoNtjGlXiTAUIXr/BVymeKZtHmpK2Fs16mnKP0pTginesQBfSF/JBy4Y9A=="],
+    "@sanity/types": ["@sanity/types@5.17.1", "", { "dependencies": { "@sanity/client": "^7.17.0", "@sanity/media-library-types": "^1.2.0" }, "peerDependencies": { "@types/react": "^19.2" } }, "sha512-BzheNQIXnuATWGXoLst5r2qlylrcSXeW9puedDJ5afyxZOatcai/aBALj++oaSTAkClDUZLbOYqVldtEO3B+Bg=="],
 
     "@sanity/ui": ["@sanity/ui@3.1.13", "", { "dependencies": { "@floating-ui/react-dom": "^2.1.6", "@juggle/resize-observer": "^3.4.0", "@sanity/color": "^3.0.6", "@sanity/icons": "^3.7.4", "csstype": "^3.1.3", "motion": "^12.23.24", "react-compiler-runtime": "1.0.0", "react-refractor": "^4.0.0", "use-effect-event": "^2.0.3" }, "peerDependencies": { "react": "^18 || >=19.0.0-0", "react-dom": "^18 || >=19.0.0-0", "react-is": "^18 || >=19.0.0-0", "styled-components": "^5.2 || ^6" } }, "sha512-ImZ0sEMUQdKGSsz6d7vN7JwZEk+dPN7qGkcaRvh9EjkhX40uWgdjigGrNHMM8Liamy1rVclpfub4MC7J2Jvuxg=="],
 
@@ -713,7 +713,7 @@
 
     "@sanity/uuid": ["@sanity/uuid@3.0.2", "", { "dependencies": { "@types/uuid": "^8.0.0", "uuid": "^8.0.0" } }, "sha512-vzdhqOrX7JGbMyK40KuIwwyXHm7GMLOGuYgn3xlC09e4ZVNofUO5mgezQqnRv0JAMthIRhofqs9f6ufUjMKOvw=="],
 
-    "@sanity/vision": ["@sanity/vision@5.15.0", "", { "dependencies": { "@codemirror/autocomplete": "^6.20.0", "@codemirror/commands": "^6.10.1", "@codemirror/lang-javascript": "^6.2.4", "@codemirror/language": "^6.12.1", "@codemirror/search": "^6.6.0", "@codemirror/state": "^6.5.4", "@codemirror/view": "^6.39.11", "@lezer/highlight": "^1.2.3", "@rexxars/react-json-inspector": "^9.0.1", "@rexxars/react-split-pane": "^1.0.0", "@sanity/color": "^3.0.6", "@sanity/icons": "^3.7.4", "@sanity/ui": "^3.1.13", "@sanity/uuid": "^3.0.2", "@uiw/react-codemirror": "^4.25.4", "is-hotkey-esm": "^1.0.0", "json-2-csv": "^5.5.9", "json5": "^2.2.3", "lodash-es": "^4.17.22", "quick-lru": "^5.1.1", "react-rx": "^4.2.2", "rxjs": "^7.8.2" }, "peerDependencies": { "react": "^19.2.2", "sanity": "^4.0.0-0 || ^5.0.0-0", "styled-components": "^6.1.15" } }, "sha512-Ww7xuBzM56a+0n4xtA0twFkV2iJKRRJ3nE7toI7HAzPt5BWHW7sOWKOqk/bh3qYly4v4GsVJeW49R59Kf5pDCg=="],
+    "@sanity/vision": ["@sanity/vision@5.17.1", "", { "dependencies": { "@codemirror/autocomplete": "^6.20.0", "@codemirror/commands": "^6.10.1", "@codemirror/lang-javascript": "^6.2.4", "@codemirror/language": "^6.12.1", "@codemirror/search": "^6.6.0", "@codemirror/state": "^6.5.4", "@codemirror/view": "^6.39.11", "@lezer/highlight": "^1.2.3", "@rexxars/react-json-inspector": "^9.0.1", "@rexxars/react-split-pane": "^1.0.0", "@sanity/color": "^3.0.6", "@sanity/icons": "^3.7.4", "@sanity/ui": "^3.1.14", "@sanity/uuid": "^3.0.2", "@uiw/react-codemirror": "^4.25.4", "is-hotkey-esm": "^1.0.0", "json-2-csv": "^5.5.9", "json5": "^2.2.3", "lodash-es": "^4.17.22", "quick-lru": "^5.1.1", "react-rx": "^4.2.2", "rxjs": "^7.8.2" }, "peerDependencies": { "react": "^19.2.2", "sanity": "^4.0.0-0 || ^5.0.0-0", "styled-components": "^6.1.15" } }, "sha512-z5AJwcBKd5LGDigZ5MQBczIz55hcIu9cowr0xpjKNxBsBQuZ+nHDrbQLgZZepMGB851jstjp/2no+wSlDpaQSA=="],
 
     "@sanity/visual-editing-types": ["@sanity/visual-editing-types@1.1.8", "", { "peerDependencies": { "@sanity/client": "^7.11.2", "@sanity/types": "*" }, "optionalPeers": ["@sanity/types"] }, "sha512-4Hu3J8qDLanymnSapRzKwHlQl6SCsBbkL1o5fSMVbWVHvTk/j2uGLLNTsjASICTqUwSm3fwWlyahzCy2uS/LvQ=="],
 
@@ -1363,7 +1363,7 @@
 
     "humanize-list": ["humanize-list@1.0.1", "", {}, "sha512-4+p3fCRF21oUqxhK0yZ6yaSP/H5/wZumc7q1fH99RkW7Q13aAxDeP78BKjoR+6y+kaHqKF/JWuQhsNuuI2NKtA=="],
 
-    "i18next": ["i18next@23.16.8", "", { "dependencies": { "@babel/runtime": "^7.23.2" } }, "sha512-06r/TitrM88Mg5FdUXAKL96dJMzgqLE5dv3ryBAra4KCwD9mJ4ndOTS95ZuymIGoE+2hzfdaMak2X11/es7ZWg=="],
+    "i18next": ["i18next@25.8.18", "", { "dependencies": { "@babel/runtime": "^7.28.6" }, "peerDependencies": { "typescript": "^5" }, "optionalPeers": ["typescript"] }, "sha512-lzY5X83BiL5AP77+9DydbrqkQHFN9hUzWGjqjLpPcp5ZOzuu1aSoKaU3xbBLSjWx9dAzW431y+d+aogxOZaKRA=="],
 
     "iconv-lite": ["iconv-lite@0.6.3", "", { "dependencies": { "safer-buffer": ">= 2.1.2 < 3.0.0" } }, "sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw=="],
 
@@ -1913,7 +1913,7 @@
 
     "safer-buffer": ["safer-buffer@2.1.2", "", {}, "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg=="],
 
-    "sanity": ["sanity@5.15.0", "", { "dependencies": { "@algorithm.ts/lcs": "^4.0.5", "@date-fns/tz": "^1.4.1", "@dnd-kit/core": "^6.3.1", "@dnd-kit/modifiers": "^6.0.1", "@dnd-kit/sortable": "^7.0.2", "@dnd-kit/utilities": "^3.2.2", "@isaacs/ttlcache": "^1.4.1", "@juggle/resize-observer": "^3.4.0", "@mux/mux-player-react": "^3.10.2", "@portabletext/editor": "^6.0.4", "@portabletext/html": "^1.0.0", "@portabletext/patches": "^2.0.4", "@portabletext/plugin-markdown-shortcuts": "^7.0.4", "@portabletext/plugin-one-line": "^6.0.4", "@portabletext/plugin-paste-link": "^3.0.4", "@portabletext/plugin-typography": "^7.0.4", "@portabletext/react": "^6.0.2", "@portabletext/sanity-bridge": "^3.0.0", "@portabletext/to-html": "^5.0.1", "@portabletext/toolkit": "^5.0.1", "@rexxars/react-json-inspector": "^9.0.1", "@sanity/asset-utils": "^2.3.0", "@sanity/bifur-client": "^0.4.1", "@sanity/cli": "^6.1.0", "@sanity/client": "^7.15.0", "@sanity/color": "^3.0.6", "@sanity/comlink": "^4.0.1", "@sanity/diff": "5.15.0", "@sanity/diff-match-patch": "^3.2.0", "@sanity/diff-patch": "^5.0.0", "@sanity/eventsource": "^5.0.2", "@sanity/icons": "^3.7.4", "@sanity/id-utils": "^1.0.0", "@sanity/image-url": "^2.0.3", "@sanity/insert-menu": "^3.0.4", "@sanity/logos": "^2.2.2", "@sanity/media-library-types": "^1.2.0", "@sanity/message-protocol": "^0.19.0", "@sanity/migrate": "^5.2.5", "@sanity/mutator": "5.15.0", "@sanity/presentation-comlink": "^2.0.1", "@sanity/preview-url-secret": "^4.0.3", "@sanity/schema": "5.15.0", "@sanity/sdk": "2.1.2", "@sanity/telemetry": "^0.8.1", "@sanity/types": "5.15.0", "@sanity/ui": "^3.1.13", "@sanity/util": "5.15.0", "@sanity/uuid": "^3.0.2", "@sentry/react": "^8.55.0", "@tanstack/react-table": "^8.21.3", "@tanstack/react-virtual": "^3.13.18", "@xstate/react": "^6.0.0", "classnames": "^2.2.5", "color2k": "^2.0.3", "dataloader": "^2.2.3", "date-fns": "^4.1.0", "debug": "^4.4.3", "exif-component": "^1.0.1", "fast-deep-equal": "3.1.3", "groq-js": "^1.27.1", "history": "^5.3.0", "i18next": "^23.16.8", "is-hotkey-esm": "^1.0.0", "isomorphic-dompurify": "2.26.0", "json-reduce": "^3.0.0", "json-stable-stringify": "^1.3.0", "lodash-es": "^4.17.22", "mendoza": "^3.0.8", "motion": "^12.27.1", "nano-pubsub": "^3.0.0", "nanoid": "^3.3.11", "observable-callback": "^1.0.3", "path-to-regexp": "^6.3.0", "player.style": "^0.1.9", "polished": "^4.3.1", "quick-lru": "^7.3.0", "raf": "^3.4.1", "react-fast-compare": "^3.2.2", "react-focus-lock": "^2.13.7", "react-i18next": "15.6.1", "react-is": "^19.2.4", "react-refractor": "^4.0.0", "react-rx": "^4.2.2", "refractor": "^5.0.0", "rxjs": "^7.8.2", "rxjs-exhaustmap-with-trailing": "^2.1.1", "rxjs-mergemap-array": "^0.1.0", "scroll-into-view-if-needed": "^3.1.0", "scrollmirror": "^1.2.4", "semver": "^7.7.2", "shallow-equals": "^1.0.0", "speakingurl": "^14.0.1", "urlpattern-polyfill": "10.1.0", "use-device-pixel-ratio": "^1.1.2", "use-hot-module-reload": "^2.0.0", "use-sync-external-store": "^1.6.0", "uuid": "^11.1.0", "web-vitals": "^5.1.0", "xstate": "^5.25.1" }, "peerDependencies": { "react": "^19.2.2", "react-dom": "^19.2.2", "styled-components": "^6.1.15" }, "bin": { "sanity": "bin/sanity" } }, "sha512-8GYHbeMg42ZmAM1EB+qTtDh++VN6uCjdtvQiraQN+m4XOM5rNiKDax3exOfFGq83J/8JMpJYvVqSFI9nG9GDew=="],
+    "sanity": ["sanity@5.17.1", "", { "dependencies": { "@algorithm.ts/lcs": "^4.0.5", "@date-fns/tz": "^1.4.1", "@dnd-kit/core": "^6.3.1", "@dnd-kit/modifiers": "^6.0.1", "@dnd-kit/sortable": "^7.0.2", "@dnd-kit/utilities": "^3.2.2", "@isaacs/ttlcache": "^1.4.1", "@juggle/resize-observer": "^3.4.0", "@mux/mux-player-react": "^3.10.2", "@portabletext/editor": "^6.4.0", "@portabletext/html": "^1.0.0", "@portabletext/patches": "^2.0.4", "@portabletext/plugin-markdown-shortcuts": "^7.0.19", "@portabletext/plugin-one-line": "^6.0.19", "@portabletext/plugin-paste-link": "^3.0.19", "@portabletext/plugin-typography": "^7.0.19", "@portabletext/react": "^6.0.3", "@portabletext/sanity-bridge": "^3.0.0", "@portabletext/to-html": "^5.0.2", "@portabletext/toolkit": "^5.0.2", "@rexxars/react-json-inspector": "^9.0.1", "@sanity/asset-utils": "^2.3.0", "@sanity/bifur-client": "^1.0.0", "@sanity/cli": "^6.1.5", "@sanity/client": "^7.17.0", "@sanity/color": "^3.0.6", "@sanity/comlink": "^4.0.1", "@sanity/diff": "5.17.1", "@sanity/diff-match-patch": "^3.2.0", "@sanity/diff-patch": "^5.0.0", "@sanity/eventsource": "^5.0.2", "@sanity/icons": "^3.7.4", "@sanity/id-utils": "^1.0.0", "@sanity/image-url": "^2.0.3", "@sanity/insert-menu": "^3.0.4", "@sanity/logos": "^2.2.2", "@sanity/media-library-types": "^1.2.0", "@sanity/message-protocol": "^0.19.0", "@sanity/migrate": "^6.0.0", "@sanity/mutate": "^0.16.1", "@sanity/mutator": "5.17.1", "@sanity/presentation-comlink": "^2.0.1", "@sanity/preview-url-secret": "^4.0.3", "@sanity/schema": "5.17.1", "@sanity/sdk": "2.1.2", "@sanity/telemetry": "^0.8.1", "@sanity/types": "5.17.1", "@sanity/ui": "^3.1.14", "@sanity/util": "5.17.1", "@sanity/uuid": "^3.0.2", "@sentry/react": "^8.55.0", "@tanstack/react-table": "^8.21.3", "@tanstack/react-virtual": "^3.13.18", "@xstate/react": "^6.0.0", "classnames": "^2.2.5", "color2k": "^2.0.3", "dataloader": "^2.2.3", "date-fns": "^4.1.0", "debug": "^4.4.3", "exif-component": "^1.0.1", "fast-deep-equal": "3.1.3", "groq-js": "^1.29.0", "history": "^5.3.0", "i18next": "^25.8.17", "is-hotkey-esm": "^1.0.0", "isomorphic-dompurify": "2.26.0", "json-reduce": "^3.0.0", "json-stable-stringify": "^1.3.0", "lodash-es": "^4.17.22", "mendoza": "^3.0.8", "motion": "^12.27.1", "nano-pubsub": "^3.0.0", "nanoid": "^3.3.11", "observable-callback": "^1.0.3", "path-to-regexp": "^6.3.0", "player.style": "^0.1.9", "polished": "^4.3.1", "quick-lru": "^7.3.0", "raf": "^3.4.1", "react-fast-compare": "^3.2.2", "react-focus-lock": "^2.13.7", "react-i18next": "15.6.1", "react-is": "^19.2.4", "react-refractor": "^4.0.0", "react-rx": "^4.2.2", "refractor": "^5.0.0", "rxjs": "^7.8.2", "rxjs-exhaustmap-with-trailing": "^2.1.1", "rxjs-mergemap-array": "^0.1.0", "scroll-into-view-if-needed": "^3.1.0", "scrollmirror": "^1.2.4", "semver": "^7.7.2", "shallow-equals": "^1.0.0", "speakingurl": "^14.0.1", "urlpattern-polyfill": "10.1.0", "use-device-pixel-ratio": "^1.1.2", "use-hot-module-reload": "^2.0.0", "use-sync-external-store": "^1.6.0", "uuid": "^11.1.0", "web-vitals": "^5.1.0", "xstate": "^5.25.1" }, "peerDependencies": { "react": "^19.2.2", "react-dom": "^19.2.2", "styled-components": "^6.1.15" }, "bin": { "sanity": "bin/sanity" } }, "sha512-XvEtzAXCc7nJcK7DVRVMCJdfDDiLoDtDMEAtssJm5AWKs9Me2kDCRPUvA0X8DG9v26jt6kru5vLp5eIxzfmbvw=="],
 
     "sanity-plugin-media-i18n": ["sanity-plugin-media-i18n@2.3.6", "", { "dependencies": { "@hookform/resolvers": "^3.1.1", "@reduxjs/toolkit": "^1.9.0", "@sanity/incompatible-plugin": "^1.0.4", "@sanity/ui": "^1.0 || ^2.0", "@sanity/uuid": "^3.0.1", "@tanem/react-nprogress": "^5.0.0", "copy-to-clipboard": "^3.3.1", "date-fns": "^2.27.0", "filesize": "^9.0.0", "groq": "^3.0.0", "is-hotkey": "^0.2.0", "lodash.clonedeep": "^4.5.0", "nanoid": "^3.3.3", "npm-run-all": "^4.1.5", "pluralize": "^8.0.0", "react-dropzone": "^11.3.1", "react-file-icon": "^1.1.0", "react-hook-form": "^7.45.1", "react-redux": "^7.2.2", "react-select": "^5.3.2", "react-virtuoso": "^4.3.11", "redux": "^4.2.0", "redux-observable": "^2.0.0", "rxjs": "^7.0.0", "zod": "^3.21.4" }, "peerDependencies": { "react": "^18", "react-dom": "^18", "sanity": "^3.0.0", "styled-components": "^5.0 || ^6.0" } }, "sha512-kV9dHj2y4HPQfddrFak9dQK3gaWyu4+DNyj9D9RMg3uEEJW6Ha20DzYbLVSe66bAQES8v7mnsms+8hKddTj90w=="],
 
@@ -2273,9 +2273,15 @@
 
     "@pnpm/network.ca-file/graceful-fs": ["graceful-fs@4.2.10", "", {}, "sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA=="],
 
+    "@portabletext/sanity-bridge/@sanity/schema": ["@sanity/schema@5.15.0", "", { "dependencies": { "@sanity/descriptors": "^1.3.0", "@sanity/generate-help-url": "^4.0.0", "@sanity/types": "5.15.0", "arrify": "^2.0.1", "groq-js": "^1.27.1", "humanize-list": "^1.0.1", "leven": "^3.1.0", "lodash-es": "^4.17.22", "object-inspect": "^1.13.4" } }, "sha512-FCZjidsbscaIqsQY+xynCphpgi3MJVkHGH/LiltBuOi+JqWxO4mnE1ICn5KXZy/2J7Cj70blCmiO1thjktBXRg=="],
+
+    "@portabletext/sanity-bridge/@sanity/types": ["@sanity/types@5.15.0", "", { "dependencies": { "@sanity/client": "^7.15.0", "@sanity/media-library-types": "^1.2.0" }, "peerDependencies": { "@types/react": "^19.2" } }, "sha512-LdO4IEF8d6h1Rr5tlFCseSJvBl16AoNtjGlXiTAUIXr/BVymeKZtHmpK2Fs16mnKP0pTginesQBfSF/JBy4Y9A=="],
+
     "@reduxjs/toolkit/reselect": ["reselect@4.1.8", "", {}, "sha512-ab9EmR80F/zQTMNeneUr4cv+jSwPJgIlvEmVwLerwrWVbpLlBuls9XHzIeTFy4cegU2NHBp3va0LKOzU5qFEYQ=="],
 
-    "@sanity/cli/@sanity/migrate": ["@sanity/migrate@6.0.0", "", { "dependencies": { "@sanity/client": "^7.17.0", "@sanity/mutate": "^0.16.1", "@sanity/types": "^5.14.0", "@sanity/util": "^5.14.0", "arrify": "^2.0.1", "console-table-printer": "^2.15.0", "debug": "^4.4.3", "fast-fifo": "^1.3.2", "groq-js": "^1.29.0", "lodash-es": "^4.17.23", "p-map": "^7.0.1" }, "peerDependencies": { "@oclif/core": "^4.8.1", "@sanity/cli-core": "^1" } }, "sha512-UNerOkcU3EQc8ugCKrujkV8XjGUwgYOymv4wxe8COce+nWABOTXvWByrQZvzkQT4qep4kbfPvx48YeT9XQfEzA=="],
+    "@sanity/bifur-client/nanoid": ["nanoid@5.1.6", "", { "bin": { "nanoid": "bin/nanoid.js" } }, "sha512-c7+7RQ+dMB5dPwwCp4ee1/iV/q2P6aK1mTZcfr1BTuVlyW9hJYiMPybJCcnBlQtuSmTIWNeazm/zqNoZSSElBg=="],
+
+    "@sanity/cli/@sanity/ui": ["@sanity/ui@3.1.14", "", { "dependencies": { "@floating-ui/react-dom": "^2.1.6", "@juggle/resize-observer": "^3.4.0", "@sanity/color": "^3.0.6", "@sanity/icons": "^3.7.4", "csstype": "^3.1.3", "motion": "^12.23.24", "react-compiler-runtime": "1.0.0", "react-refractor": "^4.0.0", "use-effect-event": "^2.0.3" }, "peerDependencies": { "react": "^18 || >=19.0.0-0", "react-dom": "^18 || >=19.0.0-0", "react-is": "^18 || >=19.0.0-0", "styled-components": "^5.2 || ^6" } }, "sha512-wpmjQrxerWM0l5NAziazr7q/aUgJBkFHvkBhImlDCzL4teWYLsblFRujTdBHh9CpbcDDa27InQdOBV+RsFBiuw=="],
 
     "@sanity/cli/isomorphic-dompurify": ["isomorphic-dompurify@2.36.0", "", { "dependencies": { "dompurify": "^3.3.1", "jsdom": "^28.0.0" } }, "sha512-E8YkGyPY3a/U5s0WOoc8Ok+3SWL/33yn2IHCoxCFLBUUPVy9WGa++akJZFxQCcJIhI+UvYhbrbnTIFQkHKZbgA=="],
 
@@ -2301,11 +2307,15 @@
 
     "@sanity/eventsource/eventsource": ["eventsource@2.0.2", "", {}, "sha512-IzUmBGPR3+oUG9dUeXynyNmf91/3zUSJg1lCktzKw47OXuhco54U3r9B7O4XX+Rb1Itm9OZ2b0RkTs10bICOxA=="],
 
-    "@sanity/migrate/@sanity/cli-core": ["@sanity/cli-core@0.1.0-alpha.19", "", { "dependencies": { "@inquirer/prompts": "^8.3.0", "@oclif/core": "^4.8.2", "@rexxars/jiti": "^2.6.2", "@sanity/client": "^7.16.0", "@sanity/types": "^5.13.0", "babel-plugin-react-compiler": "^1.0.0", "boxen": "^8.0.1", "configstore": "^7.0.0", "debug": "^4.4.3", "get-it": "^8.7.0", "get-tsconfig": "^4.13.6", "import-meta-resolve": "^4.2.0", "jsdom": "^28.1.0", "json-lexer": "^1.2.0", "log-symbols": "^7.0.1", "ora": "^9.0.0", "read-package-up": "^12.0.0", "rxjs": "^7.8.2", "tinyglobby": "^0.2.15", "tsx": "^4.21.0", "typeid-js": "^1.2.0", "vite": "^7.3.1", "vite-node": "^5.3.0", "zod": "^4.3.6" }, "peerDependencies": { "@sanity/telemetry": ">=0.8.1 <0.9.0" } }, "sha512-YQPgPZI7ZBv9T3QVV4mRK63qzlACak7A3XPPHr40/xgyQwTnIxJjNUEBeYhiyZBT7sifo1yxxu9yGSlyhyvMeg=="],
+    "@sanity/import/@sanity/mutator": ["@sanity/mutator@5.15.0", "", { "dependencies": { "@sanity/diff-match-patch": "^3.2.0", "@sanity/types": "5.15.0", "@sanity/uuid": "^3.0.2", "debug": "^4.4.3", "lodash-es": "^4.17.22" } }, "sha512-/QermJ+3EEY/eKIh6AoXYpOwNugQMoUAm83jVvR2ntP95WhUECTwnYoaaK0dDbwfrnjneGFEm6MNiYGyslf9iw=="],
+
+    "@sanity/migrate/@sanity/types": ["@sanity/types@5.15.0", "", { "dependencies": { "@sanity/client": "^7.15.0", "@sanity/media-library-types": "^1.2.0" }, "peerDependencies": { "@types/react": "^19.2" } }, "sha512-LdO4IEF8d6h1Rr5tlFCseSJvBl16AoNtjGlXiTAUIXr/BVymeKZtHmpK2Fs16mnKP0pTginesQBfSF/JBy4Y9A=="],
 
     "@sanity/mutate/nanoid": ["nanoid@5.1.6", "", { "bin": { "nanoid": "bin/nanoid.js" } }, "sha512-c7+7RQ+dMB5dPwwCp4ee1/iV/q2P6aK1mTZcfr1BTuVlyW9hJYiMPybJCcnBlQtuSmTIWNeazm/zqNoZSSElBg=="],
 
     "@sanity/runtime-cli/@inquirer/prompts": ["@inquirer/prompts@8.3.0", "", { "dependencies": { "@inquirer/checkbox": "^5.1.0", "@inquirer/confirm": "^6.0.8", "@inquirer/editor": "^5.0.8", "@inquirer/expand": "^5.0.8", "@inquirer/input": "^5.0.8", "@inquirer/number": "^4.0.8", "@inquirer/password": "^5.0.8", "@inquirer/rawlist": "^5.2.4", "@inquirer/search": "^4.1.4", "@inquirer/select": "^5.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-JAj66kjdH/F1+B7LCigjARbwstt3SNUOSzMdjpsvwJmzunK88gJeXmcm95L9nw1KynvFVuY4SzXh/3Y0lvtgSg=="],
+
+    "@sanity/sdk/@sanity/bifur-client": ["@sanity/bifur-client@0.4.1", "", { "dependencies": { "nanoid": "^3.1.12", "rxjs": "^7.0.0" } }, "sha512-mHM8WR7pujbIw2qxuV0lzinS1izOoyLza/ejWV6quITTLpBhUoPIQGPER3Ar0SON5JV0VEEqkJGa1kjiYYgx2w=="],
 
     "@sanity/sdk/@sanity/comlink": ["@sanity/comlink@3.1.1", "", { "dependencies": { "rxjs": "^7.8.2", "uuid": "^11.1.0", "xstate": "^5.23.0" } }, "sha512-UyBJG4oWNs+VGVo5Yr5aKir5bgMzF/dnaNYjqxP2+5+iXnvhVOcI6dAtEXDj7kMmn5/ysHNKbLDlW6aVeBm7xg=="],
 
@@ -2321,7 +2331,11 @@
 
     "@sanity/telemetry/typeid-js": ["typeid-js@0.3.0", "", { "dependencies": { "uuidv7": "^0.4.4" } }, "sha512-A1EmvIWG6xwYRfHuYUjPltHqteZ1EiDG+HOmbIYXeHUVztmnGrPIfU9KIK1QC30x59ko0r4JsMlwzsALCyiB3Q=="],
 
+    "@sanity/util/@sanity/types": ["@sanity/types@5.15.0", "", { "dependencies": { "@sanity/client": "^7.15.0", "@sanity/media-library-types": "^1.2.0" }, "peerDependencies": { "@types/react": "^19.2" } }, "sha512-LdO4IEF8d6h1Rr5tlFCseSJvBl16AoNtjGlXiTAUIXr/BVymeKZtHmpK2Fs16mnKP0pTginesQBfSF/JBy4Y9A=="],
+
     "@sanity/uuid/uuid": ["uuid@8.3.2", "", { "bin": { "uuid": "dist/bin/uuid" } }, "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="],
+
+    "@sanity/vision/@sanity/ui": ["@sanity/ui@3.1.14", "", { "dependencies": { "@floating-ui/react-dom": "^2.1.6", "@juggle/resize-observer": "^3.4.0", "@sanity/color": "^3.0.6", "@sanity/icons": "^3.7.4", "csstype": "^3.1.3", "motion": "^12.23.24", "react-compiler-runtime": "1.0.0", "react-refractor": "^4.0.0", "use-effect-event": "^2.0.3" }, "peerDependencies": { "react": "^18 || >=19.0.0-0", "react-dom": "^18 || >=19.0.0-0", "react-is": "^18 || >=19.0.0-0", "styled-components": "^5.2 || ^6" } }, "sha512-wpmjQrxerWM0l5NAziazr7q/aUgJBkFHvkBhImlDCzL4teWYLsblFRujTdBHh9CpbcDDa27InQdOBV+RsFBiuw=="],
 
     "@typescript-eslint/eslint-plugin/ignore": ["ignore@7.0.5", "", {}, "sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg=="],
 
@@ -2439,6 +2453,10 @@
 
     "redux-observable/tslib": ["tslib@2.1.0", "", {}, "sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A=="],
 
+    "sanity/@sanity/ui": ["@sanity/ui@3.1.14", "", { "dependencies": { "@floating-ui/react-dom": "^2.1.6", "@juggle/resize-observer": "^3.4.0", "@sanity/color": "^3.0.6", "@sanity/icons": "^3.7.4", "csstype": "^3.1.3", "motion": "^12.23.24", "react-compiler-runtime": "1.0.0", "react-refractor": "^4.0.0", "use-effect-event": "^2.0.3" }, "peerDependencies": { "react": "^18 || >=19.0.0-0", "react-dom": "^18 || >=19.0.0-0", "react-is": "^18 || >=19.0.0-0", "styled-components": "^5.2 || ^6" } }, "sha512-wpmjQrxerWM0l5NAziazr7q/aUgJBkFHvkBhImlDCzL4teWYLsblFRujTdBHh9CpbcDDa27InQdOBV+RsFBiuw=="],
+
+    "sanity/@sanity/util": ["@sanity/util@5.17.1", "", { "dependencies": { "@date-fns/tz": "^1.4.1", "@date-fns/utc": "^2.1.1", "@sanity/client": "^7.17.0", "@sanity/types": "5.17.1", "date-fns": "^4.1.0", "rxjs": "^7.8.2" } }, "sha512-0JWCx21g+jNXAeeWjwc+uSZhNWBLNidHV5kGnnQB6z4XibUQL6Qp3tRMFLy2p+ARhpbDZ6VhybJ8Q630OqdAlg=="],
+
     "sanity/quick-lru": ["quick-lru@7.3.0", "", {}, "sha512-k9lSsjl36EJdK7I06v7APZCbyGT2vMTsYSRX1Q2nbYmnkBqgUhRkAuzH08Ciotteu/PLJmIF2+tti7o3C/ts2g=="],
 
     "sanity-plugin-media-i18n/@sanity/ui": ["@sanity/ui@2.16.22", "", { "dependencies": { "@floating-ui/react-dom": "^2.1.6", "@juggle/resize-observer": "^3.4.0", "@sanity/color": "^3.0.6", "@sanity/icons": "^3.7.4", "csstype": "^3.1.3", "motion": "^12.23.24", "react-compiler-runtime": "1.0.0", "react-refractor": "^2.2.0", "use-effect-event": "^2.0.3" }, "peerDependencies": { "react": "^18 || >=19.0.0-0", "react-dom": "^18 || >=19.0.0-0", "react-is": "^18 || >=19.0.0-0", "styled-components": "^5.2 || ^6" } }, "sha512-Zw217nqjLhROHrjFYPCwV61xEYHwUbBOohHO2DZ4LdQKqNfTKsqcjLVx9Heb4oDzB06L+1CamIrvPaexVijfeg=="],
@@ -2507,11 +2525,7 @@
 
     "@sanity/codegen/chokidar/readdirp": ["readdirp@3.6.0", "", { "dependencies": { "picomatch": "^2.2.1" } }, "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA=="],
 
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts": ["@inquirer/prompts@8.3.0", "", { "dependencies": { "@inquirer/checkbox": "^5.1.0", "@inquirer/confirm": "^6.0.8", "@inquirer/editor": "^5.0.8", "@inquirer/expand": "^5.0.8", "@inquirer/input": "^5.0.8", "@inquirer/number": "^4.0.8", "@inquirer/password": "^5.0.8", "@inquirer/rawlist": "^5.2.4", "@inquirer/search": "^4.1.4", "@inquirer/select": "^5.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-JAj66kjdH/F1+B7LCigjARbwstt3SNUOSzMdjpsvwJmzunK88gJeXmcm95L9nw1KynvFVuY4SzXh/3Y0lvtgSg=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom": ["jsdom@28.1.0", "", { "dependencies": { "@acemir/cssom": "^0.9.31", "@asamuzakjp/dom-selector": "^6.8.1", "@bramus/specificity": "^2.4.2", "@exodus/bytes": "^1.11.0", "cssstyle": "^6.0.1", "data-urls": "^7.0.0", "decimal.js": "^10.6.0", "html-encoding-sniffer": "^6.0.0", "http-proxy-agent": "^7.0.2", "https-proxy-agent": "^7.0.6", "is-potential-custom-element-name": "^1.0.1", "parse5": "^8.0.0", "saxes": "^6.0.0", "symbol-tree": "^3.2.4", "tough-cookie": "^6.0.0", "undici": "^7.21.0", "w3c-xmlserializer": "^5.0.0", "webidl-conversions": "^8.0.1", "whatwg-mimetype": "^5.0.0", "whatwg-url": "^16.0.0", "xml-name-validator": "^5.0.0" }, "peerDependencies": { "canvas": "^3.0.0" }, "optionalPeers": ["canvas"] }, "sha512-0+MoQNYyr2rBHqO1xilltfDjV9G7ymYGlAUazgcDLQaUf8JDHbuGwsxN6U9qWaElZ4w1B2r7yEGIL3GdeW3Rug=="],
-
-    "@sanity/migrate/@sanity/cli-core/zod": ["zod@4.3.6", "", {}, "sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg=="],
+    "@sanity/import/@sanity/mutator/@sanity/types": ["@sanity/types@5.15.0", "", { "dependencies": { "@sanity/client": "^7.15.0", "@sanity/media-library-types": "^1.2.0" }, "peerDependencies": { "@types/react": "^19.2" } }, "sha512-LdO4IEF8d6h1Rr5tlFCseSJvBl16AoNtjGlXiTAUIXr/BVymeKZtHmpK2Fs16mnKP0pTginesQBfSF/JBy4Y9A=="],
 
     "@sanity/runtime-cli/@inquirer/prompts/@inquirer/checkbox": ["@inquirer/checkbox@5.1.0", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/core": "^11.1.5", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-/HjF1LN0a1h4/OFsbGKHNDtWICFU/dqXCdym719HFTyJo9IG7Otr+ziGWc9S0iQuohRZllh+WprSgd5UW5Fw0g=="],
 
@@ -2664,42 +2678,6 @@
     "@sanity/cli/isomorphic-dompurify/jsdom/whatwg-url": ["whatwg-url@16.0.1", "", { "dependencies": { "@exodus/bytes": "^1.11.0", "tr46": "^6.0.0", "webidl-conversions": "^8.0.1" } }, "sha512-1to4zXBxmXHV3IiSSEInrreIlu02vUOvrhxJJH5vcxYTBDAx51cqZiKdyTxlecdKNSjj8EcxGBxNf6Vg+945gw=="],
 
     "@sanity/codegen/chokidar/readdirp/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/checkbox": ["@inquirer/checkbox@5.1.0", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/core": "^11.1.5", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-/HjF1LN0a1h4/OFsbGKHNDtWICFU/dqXCdym719HFTyJo9IG7Otr+ziGWc9S0iQuohRZllh+WprSgd5UW5Fw0g=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/confirm": ["@inquirer/confirm@6.0.8", "", { "dependencies": { "@inquirer/core": "^11.1.5", "@inquirer/type": "^4.0.3" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-Di6dgmiZ9xCSUxWUReWTqDtbhXCuG2MQm2xmgSAIruzQzBqNf49b8E07/vbCYY506kDe8BiwJbegXweG8M1klw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/editor": ["@inquirer/editor@5.0.8", "", { "dependencies": { "@inquirer/core": "^11.1.5", "@inquirer/external-editor": "^2.0.3", "@inquirer/type": "^4.0.3" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-sLcpbb9B3XqUEGrj1N66KwhDhEckzZ4nI/W6SvLXyBX8Wic3LDLENlWRvkOGpCPoserabe+MxQkpiMoI8irvyA=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/expand": ["@inquirer/expand@5.0.8", "", { "dependencies": { "@inquirer/core": "^11.1.5", "@inquirer/type": "^4.0.3" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-QieW3F1prNw3j+hxO7/NKkG1pk3oz7pOB6+5Upwu3OIwADfPX0oZVppsqlL+Vl/uBHHDSOBY0BirLctLnXwGGg=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/input": ["@inquirer/input@5.0.8", "", { "dependencies": { "@inquirer/core": "^11.1.5", "@inquirer/type": "^4.0.3" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-p0IJslw0AmedLEkOU+yrEX3Aj2RTpQq7ZOf8nc1DIhjzaxRWrrgeuE5Kyh39fVRgtcACaMXx/9WNo8+GjgBOfw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/number": ["@inquirer/number@4.0.8", "", { "dependencies": { "@inquirer/core": "^11.1.5", "@inquirer/type": "^4.0.3" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-uGLiQah9A0F9UIvJBX52m0CnqtLaym0WpT9V4YZrjZ+YRDKZdwwoEPz06N6w8ChE2lrnsdyhY9sL+Y690Kh9gQ=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/password": ["@inquirer/password@5.0.8", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/core": "^11.1.5", "@inquirer/type": "^4.0.3" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-zt1sF4lYLdvPqvmvHdmjOzuUUjuCQ897pdUCO8RbXMUDKXJTTyOQgtn23le+jwcb+MpHl3VAFvzIdxRAf6aPlA=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/rawlist": ["@inquirer/rawlist@5.2.4", "", { "dependencies": { "@inquirer/core": "^11.1.5", "@inquirer/type": "^4.0.3" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-fTuJ5Cq9W286isLxwj6GGyfTjx1Zdk4qppVEPexFuA6yioCCXS4V1zfKroQqw7QdbDPN73xs2DiIAlo55+kBqg=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/search": ["@inquirer/search@4.1.4", "", { "dependencies": { "@inquirer/core": "^11.1.5", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-9yPTxq7LPmYjrGn3DRuaPuPbmC6u3fiWcsE9ggfLcdgO/ICHYgxq7mEy1yJ39brVvgXhtOtvDVjDh9slJxE4LQ=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/select": ["@inquirer/select@5.1.0", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/core": "^11.1.5", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-OyYbKnchS1u+zRe14LpYrN8S0wH1vD0p2yKISvSsJdH2TpI87fh4eZdWnpdbrGauCRWDph3NwxRmM4Pcm/hx1Q=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/cssstyle": ["cssstyle@6.2.0", "", { "dependencies": { "@asamuzakjp/css-color": "^5.0.1", "@csstools/css-syntax-patches-for-csstree": "^1.0.28", "css-tree": "^3.1.0", "lru-cache": "^11.2.6" } }, "sha512-Fm5NvhYathRnXNVndkUsCCuR63DCLVVwGOOwQw782coXFi5HhkXdu289l59HlXZBawsyNccXfWRYvLzcDCdDig=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/data-urls": ["data-urls@7.0.0", "", { "dependencies": { "whatwg-mimetype": "^5.0.0", "whatwg-url": "^16.0.0" } }, "sha512-23XHcCF+coGYevirZceTVD7NdJOqVn+49IHyxgszm+JIiHLoB2TkmPtsYkNWT1pvRSGkc35L6NHs0yHkN2SumA=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/html-encoding-sniffer": ["html-encoding-sniffer@6.0.0", "", { "dependencies": { "@exodus/bytes": "^1.6.0" } }, "sha512-CV9TW3Y3f8/wT0BRFc1/KAVQ3TUHiXmaAb6VW9vtiMFf7SLoMd1PdAc4W3KFOFETBJUb90KatHqlsZMWV+R9Gg=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/parse5": ["parse5@8.0.0", "", { "dependencies": { "entities": "^6.0.0" } }, "sha512-9m4m5GSgXjL4AjumKzq1Fgfp3Z8rsvjRNbnkVwfu2ImRqE5D0LnY2QfDen18FSY9C573YU5XxSapdHZTZ2WolA=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/tough-cookie": ["tough-cookie@6.0.1", "", { "dependencies": { "tldts": "^7.0.5" } }, "sha512-LktZQb3IeoUWB9lqR5EWTHgW/VTITCXg4D21M+lvybRVdylLrRMnqaIONLVb5mav8vM19m44HIcGq4qASeu2Qw=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/webidl-conversions": ["webidl-conversions@8.0.1", "", {}, "sha512-BMhLD/Sw+GbJC21C/UgyaZX41nPt8bUTg+jWyDeg7e7YN4xOM05YPSIXceACnXVtqyEw/LMClUQMtMZ+PGGpqQ=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/whatwg-mimetype": ["whatwg-mimetype@5.0.0", "", {}, "sha512-sXcNcHOC51uPGF0P/D4NVtrkjSU2fNsm9iog4ZvZJsL3rjoDAzXZhkm2MWt1y+PUdggKAYVoMAIYcs78wJ51Cw=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/whatwg-url": ["whatwg-url@16.0.1", "", { "dependencies": { "@exodus/bytes": "^1.11.0", "tr46": "^6.0.0", "webidl-conversions": "^8.0.1" } }, "sha512-1to4zXBxmXHV3IiSSEInrreIlu02vUOvrhxJJH5vcxYTBDAx51cqZiKdyTxlecdKNSjj8EcxGBxNf6Vg+945gw=="],
 
     "@sanity/runtime-cli/@inquirer/prompts/@inquirer/checkbox/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
 
@@ -2857,70 +2835,6 @@
 
     "@sanity/cli/isomorphic-dompurify/jsdom/whatwg-url/tr46": ["tr46@6.0.0", "", { "dependencies": { "punycode": "^2.3.1" } }, "sha512-bLVMLPtstlZ4iMQHpFHTR7GAGj2jxi8Dg0s2h2MafAE4uSWF98FC/3MomU51iQAMf8/qDUbKWf5GxuvvVcXEhw=="],
 
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/checkbox/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/checkbox/@inquirer/core": ["@inquirer/core@11.1.5", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3", "cli-width": "^4.1.0", "fast-wrap-ansi": "^0.2.0", "mute-stream": "^3.0.0", "signal-exit": "^4.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-QQPAX+lka8GyLcZ7u7Nb1h6q72iZ/oy0blilC3IB2nSt1Qqxp7akt94Jqhi/DzARuN3Eo9QwJRvtl4tmVe4T5A=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/checkbox/@inquirer/figures": ["@inquirer/figures@2.0.3", "", {}, "sha512-y09iGt3JKoOCBQ3w4YrSJdokcD8ciSlMIWsD+auPu+OZpfxLuyz+gICAQ6GCBOmJJt4KEQGHuZSVff2jiNOy7g=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/checkbox/@inquirer/type": ["@inquirer/type@4.0.3", "", { "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-cKZN7qcXOpj1h+1eTTcGDVLaBIHNMT1Rz9JqJP5MnEJ0JhgVWllx7H/tahUp5YEK1qaByH2Itb8wLG/iScD5kw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/confirm/@inquirer/core": ["@inquirer/core@11.1.5", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3", "cli-width": "^4.1.0", "fast-wrap-ansi": "^0.2.0", "mute-stream": "^3.0.0", "signal-exit": "^4.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-QQPAX+lka8GyLcZ7u7Nb1h6q72iZ/oy0blilC3IB2nSt1Qqxp7akt94Jqhi/DzARuN3Eo9QwJRvtl4tmVe4T5A=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/confirm/@inquirer/type": ["@inquirer/type@4.0.3", "", { "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-cKZN7qcXOpj1h+1eTTcGDVLaBIHNMT1Rz9JqJP5MnEJ0JhgVWllx7H/tahUp5YEK1qaByH2Itb8wLG/iScD5kw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/editor/@inquirer/core": ["@inquirer/core@11.1.5", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3", "cli-width": "^4.1.0", "fast-wrap-ansi": "^0.2.0", "mute-stream": "^3.0.0", "signal-exit": "^4.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-QQPAX+lka8GyLcZ7u7Nb1h6q72iZ/oy0blilC3IB2nSt1Qqxp7akt94Jqhi/DzARuN3Eo9QwJRvtl4tmVe4T5A=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/editor/@inquirer/external-editor": ["@inquirer/external-editor@2.0.3", "", { "dependencies": { "chardet": "^2.1.1", "iconv-lite": "^0.7.2" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-LgyI7Agbda74/cL5MvA88iDpvdXI2KuMBCGRkbCl2Dg1vzHeOgs+s0SDcXV7b+WZJrv2+ERpWSM65Fpi9VfY3w=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/editor/@inquirer/type": ["@inquirer/type@4.0.3", "", { "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-cKZN7qcXOpj1h+1eTTcGDVLaBIHNMT1Rz9JqJP5MnEJ0JhgVWllx7H/tahUp5YEK1qaByH2Itb8wLG/iScD5kw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/expand/@inquirer/core": ["@inquirer/core@11.1.5", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3", "cli-width": "^4.1.0", "fast-wrap-ansi": "^0.2.0", "mute-stream": "^3.0.0", "signal-exit": "^4.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-QQPAX+lka8GyLcZ7u7Nb1h6q72iZ/oy0blilC3IB2nSt1Qqxp7akt94Jqhi/DzARuN3Eo9QwJRvtl4tmVe4T5A=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/expand/@inquirer/type": ["@inquirer/type@4.0.3", "", { "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-cKZN7qcXOpj1h+1eTTcGDVLaBIHNMT1Rz9JqJP5MnEJ0JhgVWllx7H/tahUp5YEK1qaByH2Itb8wLG/iScD5kw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/input/@inquirer/core": ["@inquirer/core@11.1.5", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3", "cli-width": "^4.1.0", "fast-wrap-ansi": "^0.2.0", "mute-stream": "^3.0.0", "signal-exit": "^4.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-QQPAX+lka8GyLcZ7u7Nb1h6q72iZ/oy0blilC3IB2nSt1Qqxp7akt94Jqhi/DzARuN3Eo9QwJRvtl4tmVe4T5A=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/input/@inquirer/type": ["@inquirer/type@4.0.3", "", { "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-cKZN7qcXOpj1h+1eTTcGDVLaBIHNMT1Rz9JqJP5MnEJ0JhgVWllx7H/tahUp5YEK1qaByH2Itb8wLG/iScD5kw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/number/@inquirer/core": ["@inquirer/core@11.1.5", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3", "cli-width": "^4.1.0", "fast-wrap-ansi": "^0.2.0", "mute-stream": "^3.0.0", "signal-exit": "^4.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-QQPAX+lka8GyLcZ7u7Nb1h6q72iZ/oy0blilC3IB2nSt1Qqxp7akt94Jqhi/DzARuN3Eo9QwJRvtl4tmVe4T5A=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/number/@inquirer/type": ["@inquirer/type@4.0.3", "", { "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-cKZN7qcXOpj1h+1eTTcGDVLaBIHNMT1Rz9JqJP5MnEJ0JhgVWllx7H/tahUp5YEK1qaByH2Itb8wLG/iScD5kw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/password/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/password/@inquirer/core": ["@inquirer/core@11.1.5", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3", "cli-width": "^4.1.0", "fast-wrap-ansi": "^0.2.0", "mute-stream": "^3.0.0", "signal-exit": "^4.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-QQPAX+lka8GyLcZ7u7Nb1h6q72iZ/oy0blilC3IB2nSt1Qqxp7akt94Jqhi/DzARuN3Eo9QwJRvtl4tmVe4T5A=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/password/@inquirer/type": ["@inquirer/type@4.0.3", "", { "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-cKZN7qcXOpj1h+1eTTcGDVLaBIHNMT1Rz9JqJP5MnEJ0JhgVWllx7H/tahUp5YEK1qaByH2Itb8wLG/iScD5kw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/rawlist/@inquirer/core": ["@inquirer/core@11.1.5", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3", "cli-width": "^4.1.0", "fast-wrap-ansi": "^0.2.0", "mute-stream": "^3.0.0", "signal-exit": "^4.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-QQPAX+lka8GyLcZ7u7Nb1h6q72iZ/oy0blilC3IB2nSt1Qqxp7akt94Jqhi/DzARuN3Eo9QwJRvtl4tmVe4T5A=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/rawlist/@inquirer/type": ["@inquirer/type@4.0.3", "", { "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-cKZN7qcXOpj1h+1eTTcGDVLaBIHNMT1Rz9JqJP5MnEJ0JhgVWllx7H/tahUp5YEK1qaByH2Itb8wLG/iScD5kw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/search/@inquirer/core": ["@inquirer/core@11.1.5", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3", "cli-width": "^4.1.0", "fast-wrap-ansi": "^0.2.0", "mute-stream": "^3.0.0", "signal-exit": "^4.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-QQPAX+lka8GyLcZ7u7Nb1h6q72iZ/oy0blilC3IB2nSt1Qqxp7akt94Jqhi/DzARuN3Eo9QwJRvtl4tmVe4T5A=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/search/@inquirer/figures": ["@inquirer/figures@2.0.3", "", {}, "sha512-y09iGt3JKoOCBQ3w4YrSJdokcD8ciSlMIWsD+auPu+OZpfxLuyz+gICAQ6GCBOmJJt4KEQGHuZSVff2jiNOy7g=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/search/@inquirer/type": ["@inquirer/type@4.0.3", "", { "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-cKZN7qcXOpj1h+1eTTcGDVLaBIHNMT1Rz9JqJP5MnEJ0JhgVWllx7H/tahUp5YEK1qaByH2Itb8wLG/iScD5kw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/select/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/select/@inquirer/core": ["@inquirer/core@11.1.5", "", { "dependencies": { "@inquirer/ansi": "^2.0.3", "@inquirer/figures": "^2.0.3", "@inquirer/type": "^4.0.3", "cli-width": "^4.1.0", "fast-wrap-ansi": "^0.2.0", "mute-stream": "^3.0.0", "signal-exit": "^4.1.0" }, "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-QQPAX+lka8GyLcZ7u7Nb1h6q72iZ/oy0blilC3IB2nSt1Qqxp7akt94Jqhi/DzARuN3Eo9QwJRvtl4tmVe4T5A=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/select/@inquirer/figures": ["@inquirer/figures@2.0.3", "", {}, "sha512-y09iGt3JKoOCBQ3w4YrSJdokcD8ciSlMIWsD+auPu+OZpfxLuyz+gICAQ6GCBOmJJt4KEQGHuZSVff2jiNOy7g=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/select/@inquirer/type": ["@inquirer/type@4.0.3", "", { "peerDependencies": { "@types/node": ">=18" }, "optionalPeers": ["@types/node"] }, "sha512-cKZN7qcXOpj1h+1eTTcGDVLaBIHNMT1Rz9JqJP5MnEJ0JhgVWllx7H/tahUp5YEK1qaByH2Itb8wLG/iScD5kw=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/cssstyle/@asamuzakjp/css-color": ["@asamuzakjp/css-color@5.0.1", "", { "dependencies": { "@csstools/css-calc": "^3.1.1", "@csstools/css-color-parser": "^4.0.2", "@csstools/css-parser-algorithms": "^4.0.0", "@csstools/css-tokenizer": "^4.0.0", "lru-cache": "^11.2.6" } }, "sha512-2SZFvqMyvboVV1d15lMf7XiI3m7SDqXUuKaTymJYLN6dSGadqp+fVojqJlVoMlbZnlTmu3S0TLwLTJpvBMO1Aw=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/cssstyle/lru-cache": ["lru-cache@11.2.7", "", {}, "sha512-aY/R+aEsRelme17KGQa/1ZSIpLpNYYrhcrepKTZgE+W3WM16YMCaPwOHLHsmopZHELU0Ojin1lPVxKR0MihncA=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/parse5/entities": ["entities@6.0.1", "", {}, "sha512-aN97NXWF6AWBTahfVOIrB/NShkzi5H7F9r1s9mD3cDj4Ko5f2qhhVoYMibXF7GlLveb/D2ioWay8lxI97Ven3g=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/tough-cookie/tldts": ["tldts@7.0.25", "", { "dependencies": { "tldts-core": "^7.0.25" }, "bin": { "tldts": "bin/cli.js" } }, "sha512-keinCnPbwXEUG3ilrWQZU+CqcTTzHq9m2HhoUP2l7Xmi8l1LuijAXLpAJ5zRW+ifKTNscs4NdCkfkDCBYm352w=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/whatwg-url/tr46": ["tr46@6.0.0", "", { "dependencies": { "punycode": "^2.3.1" } }, "sha512-bLVMLPtstlZ4iMQHpFHTR7GAGj2jxi8Dg0s2h2MafAE4uSWF98FC/3MomU51iQAMf8/qDUbKWf5GxuvvVcXEhw=="],
-
     "@sanity/runtime-cli/@inquirer/prompts/@inquirer/checkbox/@inquirer/core/mute-stream": ["mute-stream@3.0.0", "", {}, "sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw=="],
 
     "@sanity/runtime-cli/@inquirer/prompts/@inquirer/confirm/@inquirer/core/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
@@ -3001,66 +2915,6 @@
 
     "@sanity/cli/isomorphic-dompurify/jsdom/tough-cookie/tldts/tldts-core": ["tldts-core@7.0.25", "", {}, "sha512-ZjCZK0rppSBu7rjHYDYsEaMOIbbT+nWF57hKkv4IUmZWBNrBWBOjIElc0mKRgLM8bm7x/BBlof6t2gi/Oq/Asw=="],
 
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/checkbox/@inquirer/core/mute-stream": ["mute-stream@3.0.0", "", {}, "sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/confirm/@inquirer/core/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/confirm/@inquirer/core/@inquirer/figures": ["@inquirer/figures@2.0.3", "", {}, "sha512-y09iGt3JKoOCBQ3w4YrSJdokcD8ciSlMIWsD+auPu+OZpfxLuyz+gICAQ6GCBOmJJt4KEQGHuZSVff2jiNOy7g=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/confirm/@inquirer/core/mute-stream": ["mute-stream@3.0.0", "", {}, "sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/editor/@inquirer/core/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/editor/@inquirer/core/@inquirer/figures": ["@inquirer/figures@2.0.3", "", {}, "sha512-y09iGt3JKoOCBQ3w4YrSJdokcD8ciSlMIWsD+auPu+OZpfxLuyz+gICAQ6GCBOmJJt4KEQGHuZSVff2jiNOy7g=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/editor/@inquirer/core/mute-stream": ["mute-stream@3.0.0", "", {}, "sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/editor/@inquirer/external-editor/iconv-lite": ["iconv-lite@0.7.2", "", { "dependencies": { "safer-buffer": ">= 2.1.2 < 3.0.0" } }, "sha512-im9DjEDQ55s9fL4EYzOAv0yMqmMBSZp6G0VvFyTMPKWxiSBHUj9NW/qqLmXUwXrrM7AvqSlTCfvqRb0cM8yYqw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/expand/@inquirer/core/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/expand/@inquirer/core/@inquirer/figures": ["@inquirer/figures@2.0.3", "", {}, "sha512-y09iGt3JKoOCBQ3w4YrSJdokcD8ciSlMIWsD+auPu+OZpfxLuyz+gICAQ6GCBOmJJt4KEQGHuZSVff2jiNOy7g=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/expand/@inquirer/core/mute-stream": ["mute-stream@3.0.0", "", {}, "sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/input/@inquirer/core/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/input/@inquirer/core/@inquirer/figures": ["@inquirer/figures@2.0.3", "", {}, "sha512-y09iGt3JKoOCBQ3w4YrSJdokcD8ciSlMIWsD+auPu+OZpfxLuyz+gICAQ6GCBOmJJt4KEQGHuZSVff2jiNOy7g=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/input/@inquirer/core/mute-stream": ["mute-stream@3.0.0", "", {}, "sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/number/@inquirer/core/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/number/@inquirer/core/@inquirer/figures": ["@inquirer/figures@2.0.3", "", {}, "sha512-y09iGt3JKoOCBQ3w4YrSJdokcD8ciSlMIWsD+auPu+OZpfxLuyz+gICAQ6GCBOmJJt4KEQGHuZSVff2jiNOy7g=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/number/@inquirer/core/mute-stream": ["mute-stream@3.0.0", "", {}, "sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/password/@inquirer/core/@inquirer/figures": ["@inquirer/figures@2.0.3", "", {}, "sha512-y09iGt3JKoOCBQ3w4YrSJdokcD8ciSlMIWsD+auPu+OZpfxLuyz+gICAQ6GCBOmJJt4KEQGHuZSVff2jiNOy7g=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/password/@inquirer/core/mute-stream": ["mute-stream@3.0.0", "", {}, "sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/rawlist/@inquirer/core/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/rawlist/@inquirer/core/@inquirer/figures": ["@inquirer/figures@2.0.3", "", {}, "sha512-y09iGt3JKoOCBQ3w4YrSJdokcD8ciSlMIWsD+auPu+OZpfxLuyz+gICAQ6GCBOmJJt4KEQGHuZSVff2jiNOy7g=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/rawlist/@inquirer/core/mute-stream": ["mute-stream@3.0.0", "", {}, "sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/search/@inquirer/core/@inquirer/ansi": ["@inquirer/ansi@2.0.3", "", {}, "sha512-g44zhR3NIKVs0zUesa4iMzExmZpLUdTLRMCStqX3GE5NT6VkPcxQGJ+uC8tDgBUC/vB1rUhUd55cOf++4NZcmw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/search/@inquirer/core/mute-stream": ["mute-stream@3.0.0", "", {}, "sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw=="],
-
-    "@sanity/migrate/@sanity/cli-core/@inquirer/prompts/@inquirer/select/@inquirer/core/mute-stream": ["mute-stream@3.0.0", "", {}, "sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/cssstyle/@asamuzakjp/css-color/@csstools/css-calc": ["@csstools/css-calc@3.1.1", "", { "peerDependencies": { "@csstools/css-parser-algorithms": "^4.0.0", "@csstools/css-tokenizer": "^4.0.0" } }, "sha512-HJ26Z/vmsZQqs/o3a6bgKslXGFAungXGbinULZO3eMsOyNJHeBBZfup5FiZInOghgoM4Hwnmw+OgbJCNg1wwUQ=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/cssstyle/@asamuzakjp/css-color/@csstools/css-color-parser": ["@csstools/css-color-parser@4.0.2", "", { "dependencies": { "@csstools/color-helpers": "^6.0.2", "@csstools/css-calc": "^3.1.1" }, "peerDependencies": { "@csstools/css-parser-algorithms": "^4.0.0", "@csstools/css-tokenizer": "^4.0.0" } }, "sha512-0GEfbBLmTFf0dJlpsNU7zwxRIH0/BGEMuXLTCvFYxuL1tNhqzTbtnFICyJLTNK4a+RechKP75e7w42ClXSnJQw=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/cssstyle/@asamuzakjp/css-color/@csstools/css-parser-algorithms": ["@csstools/css-parser-algorithms@4.0.0", "", { "peerDependencies": { "@csstools/css-tokenizer": "^4.0.0" } }, "sha512-+B87qS7fIG3L5h3qwJ/IFbjoVoOe/bpOdh9hAjXbvx0o8ImEmUsGXN0inFOnk2ChCFgqkkGFQ+TpM5rbhkKe4w=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/cssstyle/@asamuzakjp/css-color/@csstools/css-tokenizer": ["@csstools/css-tokenizer@4.0.0", "", {}, "sha512-QxULHAm7cNu72w97JUNCBFODFaXpbDg+dP8b/oWFAZ2MTRppA3U00Y2L1HqaS4J6yBqxwa/Y3nMBaxVKbB/NsA=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/tough-cookie/tldts/tldts-core": ["tldts-core@7.0.25", "", {}, "sha512-ZjCZK0rppSBu7rjHYDYsEaMOIbbT+nWF57hKkv4IUmZWBNrBWBOjIElc0mKRgLM8bm7x/BBlof6t2gi/Oq/Asw=="],
-
     "find-cache-dir/pkg-dir/find-up/locate-path/p-locate/p-limit": ["p-limit@2.3.0", "", { "dependencies": { "p-try": "^2.0.0" } }, "sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w=="],
 
     "sanity-plugin-media-i18n/@sanity/ui/react-refractor/refractor/hastscript/@types/hast": ["@types/hast@2.3.10", "", { "dependencies": { "@types/unist": "^2" } }, "sha512-McWspRw8xx8J9HurkVBfYj0xKoE25tOFlHGdx4MJ5xORQrMGZNqJhVQWaIbm6Oyla5kYOXtDiopzKRJzEOkwJw=="],
@@ -3086,8 +2940,6 @@
     "sanity-plugin-media-i18n/@sanity/ui/react-refractor/refractor/parse-entities/is-hexadecimal": ["is-hexadecimal@1.0.4", "", {}, "sha512-gyPJuv83bHMpocVYoqof5VDiZveEoGoFL8m3BXNb2VW8Xs+rz9kqO8LOQ5DH6EsuvilT1ApazU0pyl+ytbPtlw=="],
 
     "@sanity/cli/isomorphic-dompurify/jsdom/cssstyle/@asamuzakjp/css-color/@csstools/css-color-parser/@csstools/color-helpers": ["@csstools/color-helpers@6.0.2", "", {}, "sha512-LMGQLS9EuADloEFkcTBR3BwV/CGHV7zyDxVRtVDTwdI2Ca4it0CCVTT9wCkxSgokjE5Ho41hEPgb8OEUwoXr6Q=="],
-
-    "@sanity/migrate/@sanity/cli-core/jsdom/cssstyle/@asamuzakjp/css-color/@csstools/css-color-parser/@csstools/color-helpers": ["@csstools/color-helpers@6.0.2", "", {}, "sha512-LMGQLS9EuADloEFkcTBR3BwV/CGHV7zyDxVRtVDTwdI2Ca4it0CCVTT9wCkxSgokjE5Ho41hEPgb8OEUwoXr6Q=="],
 
     "sanity-plugin-media-i18n/@sanity/ui/react-refractor/refractor/hastscript/@types/hast/@types/unist": ["@types/unist@2.0.11", "", {}, "sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA=="],
 
