@@ -1,11 +1,13 @@
-import {defineCliConfig} from 'sanity/cli'
+import { defineCliConfig } from 'sanity/cli'
 
 export default defineCliConfig({
   api: {
     projectId: process.env.SANITY_STUDIO_ID,
     dataset: process.env.SANITY_STUDIO_DATASET,
   },
-  deployment: {autoUpdates: true},
+  deployment: {
+    autoUpdates: true,
+  },
   typegen: {
     enabled: true,
     path: [
@@ -16,9 +18,13 @@ export default defineCliConfig({
       '../composables/**/*.{ts,js}',
       '../utils/**/*.{ts,js}',
       '../components/**/*.{ts,js}',
+      '../shared/utils/**/*.{ts,js}',
     ],
     schema: 'types/schema.json',
     generates: 'types/sanity.types.ts',
     overloadClientMethods: true,
+  },
+  schemaExtraction: {
+    enabled: true,
   },
 })

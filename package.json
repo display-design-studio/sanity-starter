@@ -10,7 +10,7 @@
     "build": "sanity build && bun run typegen",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
-    "typegen": "sanity schema extract --path types/schema.json && sanity typegen generate",
+    "typegen": "sanity schema extract --path types && sanity typegen generate",
     "typegen:watch": "sanity typegen generate --watch"
   },
   "keywords": [
