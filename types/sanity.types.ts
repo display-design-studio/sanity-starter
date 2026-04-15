@@ -12,6 +12,8 @@
  * ---------------------------------------------------------------------------------
  */
 
+export declare const internalGroqTypeReferenceTo: unique symbol;
+
 // Source: types/schema.json
 export type LocaleSlug = {
   _type: "localeSlug";
@@ -78,9 +80,9 @@ export type Page = {
   _updatedAt: string;
   _rev: string;
   title?: LocaleString;
+  slug?: LocaleSlug;
   description?: LocaleText;
   content?: LocaleBlock;
-  slug?: LocaleSlug;
 };
 
 export type Slug = {
@@ -224,8 +226,6 @@ export type Geopoint = {
 
 export type AllSanitySchemaTypes = LocaleSlug | LocaleBlock | LocaleText | LocaleString | Page | Slug | Home | MediaTag | SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityImageMetadata | SanityImageHotspot | SanityImageCrop | SanityFileAsset | SanityAssetSourceData | SanityImageAsset | Geopoint;
 
-export declare const internalGroqTypeReferenceTo: unique symbol;
-
 // Source: queries/index.ts
 // Variable: HOME_QUERY
 // Query: *[_type == "home"][0] {    _id,    _type,    title,    description,    content  }
@@ -239,7 +239,7 @@ export type HOME_QUERY_RESULT = {
 
 // Source: queries/index.ts
 // Variable: PAGES_QUERY
-// Query: *[_type == "page"] | order(_createdAt asc) {    _id,    _type,    title,    slug,    description  }
+// Query: *[_type == "page"] | order(_createdAt asc) {    _id,    _type,    title,    slug,    description,  }
 export type PAGES_QUERY_RESULT = Array<{
   _id: string;
   _type: "page";
@@ -265,7 +265,7 @@ import "@sanity/client";
 declare module "@sanity/client" {
   interface SanityQueries {
     "\n  *[_type == \"home\"][0] {\n    _id,\n    _type,\n    title,\n    description,\n    content\n  }\n": HOME_QUERY_RESULT;
-    "\n  *[_type == \"page\"] | order(_createdAt asc) {\n    _id,\n    _type,\n    title,\n    slug,\n    description\n  }\n": PAGES_QUERY_RESULT;
+    "\n  *[_type == \"page\"] | order(_createdAt asc) {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n  }\n": PAGES_QUERY_RESULT;
     "\n  *[_type == \"page\" && slug[$lang].current == $slug][0] {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n    content\n  }\n": PAGE_BY_SLUG_QUERY_RESULT;
   }
 }

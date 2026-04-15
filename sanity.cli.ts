@@ -26,5 +26,6 @@ export default defineCliConfig({
   },
   schemaExtraction: {
     enabled: true,
+    path: 'types/schema.json',
   },
 })
