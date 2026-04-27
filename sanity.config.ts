@@ -12,7 +12,7 @@ import { dataset, projectId } from './utils/env'
 
 //Plugins
 import { languageFilter } from '@sanity/language-filter'
-import { media } from 'sanity-plugin-media-i18n'
+import { media } from 'sanity-plugin-media'
 import { baseLanguage, supportedLanguages } from './utils/localization'
 
 const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
@@ -28,7 +28,9 @@ export default defineConfig({
       structure,
     }),
     visionTool(),
-    media(),
+    media({
+      locales: supportedLanguages,
+    }),
     presentationTool({
       previewUrl: {
         initial: process.env.SANITY_STUDIO_PREVIEW_URL,
