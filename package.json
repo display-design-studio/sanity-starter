@@ -18,12 +18,12 @@
   ],
   "dependencies": {
     "@sanity/language-filter": "^5.0.1",
-    "@sanity/vision": "^5.21.0",
+    "@sanity/vision": "^5.22.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "sanity": "^5.21.0",
+    "sanity": "^5.22.0",
     "sanity-plugin-media-i18n": "^2.3.6",
-    "styled-components": "^6.4.0"
+    "styled-components": "^6.4.1"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^6.0.0",
