@@ -1,7 +1,6 @@
 ---
 title: Import HTML to Portable Text
 description: Use @portabletext/block-tools with JSDOM to convert HTML content
-tags: migration, html, portable-text, import
 ---
 
 ## Import HTML to Portable Text
@@ -16,9 +15,9 @@ npm install @portabletext/block-tools jsdom
 
 ### Basic Conversion
 
-```javascript
-const { htmlToBlocks } = require('@portabletext/block-tools')
-const { JSDOM } = require('jsdom')
+```typescript
+import { htmlToBlocks } from '@portabletext/block-tools'
+import { JSDOM } from 'jsdom'
 
 // Get block content type from your schema
 const blockContentType = schema.get('blockContent')

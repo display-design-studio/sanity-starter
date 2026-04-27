@@ -175,3 +175,26 @@ Avoid these mistakes that invalidate results or lead to wrong conclusions.
 - Prioritize tests by potential impact
 - Not everything needs a test—use judgment for low-risk changes
 - Focus experimentation resources on high-value decisions
+
+### 16. Sample Ratio Mismatch (SRM)
+
+**The problem:** The actual traffic split doesn't match the intended split (e.g., you expect 50/50 but observe 52/48).
+
+**Why it's wrong:** SRM is a strong signal of an implementation bug — broken randomization, bot contamination, or redirect issues. Results from experiments with SRM cannot be trusted.
+
+**The fix:**
+- Check the actual split ratio against expected before analyzing results
+- Use a chi-squared test to detect statistically significant mismatches
+- If SRM is detected, investigate the root cause before drawing any conclusions
+- Common causes: bot traffic, browser redirects dropping users, bucketing bugs
+
+### 17. Novelty and Primacy Effects
+
+**The problem:** Users react differently to new designs initially, and the effect fades over time.
+
+**Why it's wrong:** Short experiments may show inflated effects that don't persist. Returning users may click more simply because something looks new.
+
+**The fix:**
+- Run experiments for at least 2 full business cycles
+- Segment results by new vs. returning users
+- If possible, check whether the effect holds in the second week vs. the first
