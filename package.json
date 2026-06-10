@@ -18,10 +18,10 @@
   ],
   "dependencies": {
     "@sanity/language-filter": "^5.0.1",
-    "@sanity/vision": "^5.22.0",
+    "@sanity/vision": "^5.30.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "sanity": "^5.22.0",
+    "sanity": "^5.30.0",
     "sanity-plugin-media": "^4.2.0",
     "styled-components": "^6.4.1"
   },

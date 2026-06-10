@@ -6,8 +6,8 @@ export interface SupportedLanguage {
 }
 
 export const supportedLanguages: SupportedLanguage[] = [
-  {id: 'en', title: 'English'},
-  {id: 'it', title: 'Italian'},
+  {id: 'en', title: 'English 🇬🇧'},
+  {id: 'it', title: 'Italian 🇮🇹'},
 ]
 
 export const baseLanguage: SupportedLanguage =

@@ -12,278 +12,415 @@
  * ---------------------------------------------------------------------------------
  */
 
-export declare const internalGroqTypeReferenceTo: unique symbol
+export declare const internalGroqTypeReferenceTo: unique symbol;
 
 // Source: types/schema.json
+export type Embed = {
+  desktop: string;
+  mobile?: string;
+};
+
+export type HomeReference = {
+  _ref: string;
+  _type: "reference";
+  _weak?: boolean;
+  [internalGroqTypeReferenceTo]?: "home";
+};
+
+export type PageReference = {
+  _ref: string;
+  _type: "reference";
+  _weak?: boolean;
+  [internalGroqTypeReferenceTo]?: "page";
+};
+
+export type Ref = {
+  type: "internal" | "external" | "file";
+  internalRef?: HomeReference | PageReference;
+  externalRef?: string;
+  fileRef?: FileRef;
+};
+
+export type Seo = {
+  title?: LocaleString;
+  description?: LocaleText;
+  image?: SeoImage;
+};
+
+export type SanityImageAssetReference = {
+  _ref: string;
+  _type: "reference";
+  _weak?: boolean;
+  [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+};
+
+export type SeoImage = {
+  asset?: SanityImageAssetReference;
+  media?: unknown // Unable to locate the referenced type "image.media" in schema
+;
+  hotspot?: SanityImageHotspot;
+  crop?: SanityImageCrop;
+  _type: "image";
+};
+
+export type SanityFileAssetReference = {
+  _ref: string;
+  _type: "reference";
+  _weak?: boolean;
+  [internalGroqTypeReferenceTo]?: "sanity.fileAsset";
+};
+
+export type FileRef = {
+  asset?: SanityFileAssetReference;
+  media?: unknown // Unable to locate the referenced type "fileRef.media" in schema
+;
+  _type: "file";
+};
+
+export type Media = {
+  _type: "media";
+  type: "image" | "video" | "embed";
+  image?: Picture;
+  video?: Video;
+  embed?: Embed;
+};
+
+export type Video = {
+  _type: "video";
+  desktop?: {
+    asset?: SanityFileAssetReference;
+    media?: unknown;
+    _type: "file";
+  };
+  mobile?: {
+    asset?: SanityFileAssetReference;
+    media?: unknown;
+    _type: "file";
+  };
+};
+
+export type Picture = {
+  _type: "picture";
+  desktop?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
+  mobile?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
+};
+
+export type Cta = {
+  _type: "cta";
+  label: LocaleString;
+  ref: Ref;
+};
+
 export type LocaleSlug = {
-  _type: 'localeSlug'
-  en?: Slug
-  it?: Slug
-}
+  _type: "localeSlug";
+  en?: Slug;
+  it?: Slug;
+};
 
 export type LocaleBlock = {
-  _type: 'localeBlock'
+  _type: "localeBlock";
   en?: Array<{
     children?: Array<{
-      marks?: Array<string>
-      text?: string
-      _type: 'span'
-      _key: string
-    }>
-    style?: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'blockquote'
-    listItem?: 'bullet' | 'number'
+      marks?: Array<string>;
+      text?: string;
+      _type: "span";
+      _key: string;
+    }>;
+    style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
+    listItem?: "bullet" | "number";
     markDefs?: Array<{
-      href?: string
-      _type: 'link'
-      _key: string
-    }>
-    level?: number
-    _type: 'block'
-    _key: string
-  }>
+      href?: string;
+      _type: "link";
+      _key: string;
+    }>;
+    level?: number;
+    _type: "block";
+    _key: string;
+  }>;
   it?: Array<{
     children?: Array<{
-      marks?: Array<string>
-      text?: string
-      _type: 'span'
-      _key: string
-    }>
-    style?: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'blockquote'
-    listItem?: 'bullet' | 'number'
+      marks?: Array<string>;
+      text?: string;
+      _type: "span";
+      _key: string;
+    }>;
+    style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
+    listItem?: "bullet" | "number";
     markDefs?: Array<{
-      href?: string
-      _type: 'link'
-      _key: string
-    }>
-    level?: number
-    _type: 'block'
-    _key: string
-  }>
-}
+      href?: string;
+      _type: "link";
+      _key: string;
+    }>;
+    level?: number;
+    _type: "block";
+    _key: string;
+  }>;
+};
 
 export type LocaleText = {
-  _type: 'localeText'
-  en?: string
-  it?: string
-}
+  _type: "localeText";
+  en?: string;
+  it?: string;
+};
 
 export type LocaleString = {
-  _type: 'localeString'
-  en?: string
-  it?: string
-}
+  _type: "localeString";
+  en?: string;
+  it?: string;
+};
 
-export type Page = {
-  _id: string
-  _type: 'page'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  title?: LocaleString
-  slug?: LocaleSlug
-  description?: LocaleText
-  content?: LocaleBlock
-}
-
-export type Slug = {
-  _type: 'slug'
-  current: string
-  source?: string
-}
-
-export type Home = {
-  _id: string
-  _type: 'home'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  title?: LocaleString
-  description?: LocaleText
-  content?: LocaleBlock
-}
-
-export type MediaTag = {
-  _id: string
-  _type: 'media.tag'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  name?: Slug
-}
-
-export type SanityImagePaletteSwatch = {
-  _type: 'sanity.imagePaletteSwatch'
-  background?: string
-  foreground?: string
-  population?: number
-  title?: string
-}
-
-export type SanityImagePalette = {
-  _type: 'sanity.imagePalette'
-  darkMuted?: SanityImagePaletteSwatch
-  lightVibrant?: SanityImagePaletteSwatch
-  darkVibrant?: SanityImagePaletteSwatch
-  vibrant?: SanityImagePaletteSwatch
-  dominant?: SanityImagePaletteSwatch
-  lightMuted?: SanityImagePaletteSwatch
-  muted?: SanityImagePaletteSwatch
-}
-
-export type SanityImageDimensions = {
-  _type: 'sanity.imageDimensions'
-  height: number
-  width: number
-  aspectRatio: number
-}
-
-export type SanityImageMetadata = {
-  _type: 'sanity.imageMetadata'
-  location?: Geopoint
-  dimensions?: SanityImageDimensions
-  palette?: SanityImagePalette
-  lqip?: string
-  blurHash?: string
-  thumbHash?: string
-  hasAlpha?: boolean
-  isOpaque?: boolean
-}
-
-export type SanityImageHotspot = {
-  _type: 'sanity.imageHotspot'
-  x: number
-  y: number
-  height: number
-  width: number
-}
+export type Footer = {
+  _id: string;
+  _type: "footer";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  logo?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
+  companyInfo?: LocaleText;
+  navigation?: Array<{
+    _key: string;
+  } & Cta>;
+  socials?: Array<{
+    label: string;
+    url: string;
+    _type: "socialLink";
+    _key: string;
+  }>;
+};
 
 export type SanityImageCrop = {
-  _type: 'sanity.imageCrop'
-  top: number
-  bottom: number
-  left: number
-  right: number
-}
+  _type: "sanity.imageCrop";
+  top: number;
+  bottom: number;
+  left: number;
+  right: number;
+};
+
+export type SanityImageHotspot = {
+  _type: "sanity.imageHotspot";
+  x: number;
+  y: number;
+  height: number;
+  width: number;
+};
+
+export type Header = {
+  _id: string;
+  _type: "header";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  logo?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
+  navigation?: Array<{
+    _key: string;
+  } & Cta>;
+};
+
+export type Home = {
+  _id: string;
+  _type: "home";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: LocaleString;
+  description?: LocaleText;
+  content?: LocaleBlock;
+  media?: Media;
+  cta?: Cta;
+  seo?: Seo;
+};
+
+export type Page = {
+  _id: string;
+  _type: "page";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: LocaleString;
+  slug?: LocaleSlug;
+  description?: LocaleText;
+  content?: LocaleBlock;
+  seo?: Seo;
+};
+
+export type Slug = {
+  _type: "slug";
+  current: string;
+  source?: string;
+};
+
+export type MediaTag = {
+  _id: string;
+  _type: "media.tag";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  name?: Slug;
+};
+
+export type SanityImagePaletteSwatch = {
+  _type: "sanity.imagePaletteSwatch";
+  background?: string;
+  foreground?: string;
+  population?: number;
+  title?: string;
+};
+
+export type SanityImagePalette = {
+  _type: "sanity.imagePalette";
+  darkMuted?: SanityImagePaletteSwatch;
+  lightVibrant?: SanityImagePaletteSwatch;
+  darkVibrant?: SanityImagePaletteSwatch;
+  vibrant?: SanityImagePaletteSwatch;
+  dominant?: SanityImagePaletteSwatch;
+  lightMuted?: SanityImagePaletteSwatch;
+  muted?: SanityImagePaletteSwatch;
+};
+
+export type SanityImageDimensions = {
+  _type: "sanity.imageDimensions";
+  height: number;
+  width: number;
+  aspectRatio: number;
+};
+
+export type SanityImageMetadata = {
+  _type: "sanity.imageMetadata";
+  location?: Geopoint;
+  dimensions?: SanityImageDimensions;
+  palette?: SanityImagePalette;
+  lqip?: string;
+  blurHash?: string;
+  thumbHash?: string;
+  hasAlpha?: boolean;
+  isOpaque?: boolean;
+};
 
 export type SanityFileAsset = {
-  _id: string
-  _type: 'sanity.fileAsset'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  originalFilename?: string
-  label?: string
-  title?: string
-  description?: string
-  altText?: string
-  sha1hash: string
-  extension: string
-  mimeType: string
-  size: number
-  assetId: string
-  uploadId?: string
-  path: string
-  url: string
-  source?: SanityAssetSourceData
-}
+  _id: string;
+  _type: "sanity.fileAsset";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  originalFilename?: string;
+  label?: string;
+  title?: string;
+  description?: string;
+  altText?: string;
+  sha1hash: string;
+  extension: string;
+  mimeType: string;
+  size: number;
+  assetId: string;
+  uploadId?: string;
+  path: string;
+  url: string;
+  source?: SanityAssetSourceData;
+};
 
 export type SanityAssetSourceData = {
-  _type: 'sanity.assetSourceData'
-  name?: string
-  id?: string
-  url?: string
-}
+  _type: "sanity.assetSourceData";
+  name?: string;
+  id?: string;
+  url?: string;
+};
 
 export type SanityImageAsset = {
-  _id: string
-  _type: 'sanity.imageAsset'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  originalFilename?: string
-  label?: string
-  title?: string
-  description?: string
-  altText?: string
-  sha1hash: string
-  extension: string
-  mimeType: string
-  size: number
-  assetId: string
-  uploadId?: string
-  path: string
-  url: string
-  metadata?: SanityImageMetadata
-  source?: SanityAssetSourceData
-}
+  _id: string;
+  _type: "sanity.imageAsset";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  originalFilename?: string;
+  label?: string;
+  title?: string;
+  description?: string;
+  altText?: string;
+  sha1hash: string;
+  extension: string;
+  mimeType: string;
+  size: number;
+  assetId: string;
+  uploadId?: string;
+  path: string;
+  url: string;
+  metadata?: SanityImageMetadata;
+  source?: SanityAssetSourceData;
+};
 
 export type Geopoint = {
-  _type: 'geopoint'
-  lat?: number
-  lng?: number
-  alt?: number
-}
+  _type: "geopoint";
+  lat?: number;
+  lng?: number;
+  alt?: number;
+};
 
-export type AllSanitySchemaTypes =
-  | LocaleSlug
-  | LocaleBlock
-  | LocaleText
-  | LocaleString
-  | Page
-  | Slug
-  | Home
-  | MediaTag
-  | SanityImagePaletteSwatch
-  | SanityImagePalette
-  | SanityImageDimensions
-  | SanityImageMetadata
-  | SanityImageHotspot
-  | SanityImageCrop
-  | SanityFileAsset
-  | SanityAssetSourceData
-  | SanityImageAsset
-  | Geopoint
+export type AllSanitySchemaTypes = Embed | HomeReference | PageReference | Ref | Seo | SanityImageAssetReference | SeoImage | SanityFileAssetReference | FileRef | Media | Video | Picture | Cta | LocaleSlug | LocaleBlock | LocaleText | LocaleString | Footer | SanityImageCrop | SanityImageHotspot | Header | Home | Page | Slug | MediaTag | SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityImageMetadata | SanityFileAsset | SanityAssetSourceData | SanityImageAsset | Geopoint;
 
 // Source: queries/index.ts
 // Variable: HOME_QUERY
 // Query: *[_type == "home"][0] {    _id,    _type,    title,    description,    content  }
 export type HOME_QUERY_RESULT = {
-  _id: string
-  _type: 'home'
-  title: LocaleString | null
-  description: LocaleText | null
-  content: LocaleBlock | null
-} | null
+  _id: string;
+  _type: "home";
+  title: LocaleString | null;
+  description: LocaleText | null;
+  content: LocaleBlock | null;
+} | null;
 
 // Source: queries/index.ts
 // Variable: PAGES_QUERY
 // Query: *[_type == "page"] | order(_createdAt asc) {    _id,    _type,    title,    slug,    description,  }
 export type PAGES_QUERY_RESULT = Array<{
-  _id: string
-  _type: 'page'
-  title: LocaleString | null
-  slug: LocaleSlug | null
-  description: LocaleText | null
-}>
+  _id: string;
+  _type: "page";
+  title: LocaleString | null;
+  slug: LocaleSlug | null;
+  description: LocaleText | null;
+}>;
 
 // Source: queries/index.ts
 // Variable: PAGE_BY_SLUG_QUERY
 // Query: *[_type == "page" && slug[$lang].current == $slug][0] {    _id,    _type,    title,    slug,    description,    content  }
 export type PAGE_BY_SLUG_QUERY_RESULT = {
-  _id: string
-  _type: 'page'
-  title: LocaleString | null
-  slug: LocaleSlug | null
-  description: LocaleText | null
-  content: LocaleBlock | null
-} | null
+  _id: string;
+  _type: "page";
+  title: LocaleString | null;
+  slug: LocaleSlug | null;
+  description: LocaleText | null;
+  content: LocaleBlock | null;
+} | null;
 
 // Query TypeMap
-import '@sanity/client'
-declare module '@sanity/client' {
+import "@sanity/client";
+declare module "@sanity/client" {
   interface SanityQueries {
-    '\n  *[_type == "home"][0] {\n    _id,\n    _type,\n    title,\n    description,\n    content\n  }\n': HOME_QUERY_RESULT
-    '\n  *[_type == "page"] | order(_createdAt asc) {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n  }\n': PAGES_QUERY_RESULT
-    '\n  *[_type == "page" && slug[$lang].current == $slug][0] {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n    content\n  }\n': PAGE_BY_SLUG_QUERY_RESULT
+    "\n  *[_type == \"home\"][0] {\n    _id,\n    _type,\n    title,\n    description,\n    content\n  }\n": HOME_QUERY_RESULT;
+    "\n  *[_type == \"page\"] | order(_createdAt asc) {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n  }\n": PAGES_QUERY_RESULT;
+    "\n  *[_type == \"page\" && slug[$lang].current == $slug][0] {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n    content\n  }\n": PAGE_BY_SLUG_QUERY_RESULT;
   }
 }

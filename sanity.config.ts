@@ -1,22 +1,22 @@
-import { visionTool } from '@sanity/vision'
-import { defineConfig } from 'sanity'
-import { presentationTool } from 'sanity/presentation'
-import { structureTool } from 'sanity/structure'
+import {visionTool} from '@sanity/vision'
+import {defineConfig} from 'sanity'
+import {presentationTool} from 'sanity/presentation'
+import {structureTool} from 'sanity/structure'
 
-import { locations, mainDocuments } from './presentation/resolve'
-import { schemaTypes } from './schemaTypes'
-import { structure } from './structure/index'
+import {locations, mainDocuments} from './presentation/resolve'
+import {schemaTypes} from './schemaTypes'
+import {structure} from './structure/index'
 
 //Utils
-import { dataset, projectId } from './utils/env'
+import {dataset, projectId} from './utils/env'
 
 //Plugins
-import { languageFilter } from '@sanity/language-filter'
-import { media } from 'sanity-plugin-media'
-import { baseLanguage, supportedLanguages } from './utils/localization'
+import {languageFilter} from '@sanity/language-filter'
+import {media} from 'sanity-plugin-media'
+import {baseLanguage, supportedLanguages} from './utils/localization'
 
 const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
-const singletonTypes = new Set(['home'])
+const singletonTypes = new Set(['home', 'header', 'footer'])
 
 export default defineConfig({
   name: 'default',
