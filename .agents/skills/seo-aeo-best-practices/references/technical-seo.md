@@ -2,6 +2,16 @@
 
 Essential technical SEO elements for modern web applications.
 
+## Table of Contents
+
+- Metadata
+- Sitemaps
+- Canonical URLs
+- Redirects
+- Performance
+- Robots.txt
+- International SEO
+
 ## Metadata
 
 ### Title Tags
@@ -71,8 +81,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return pages.map(page => ({
     url: `https://example.com${page.url}`,
     lastModified: new Date(page._updatedAt),
-    changeFrequency: 'weekly',
-    priority: 0.8,
+    // Note: changeFrequency and priority are largely ignored by Google
+    // but may be used by other search engines
   }))
 }
 ```
@@ -139,5 +149,40 @@ Allow: /
 Disallow: /api/
 Disallow: /studio/
 
+# AI crawlers — allow or block based on your content strategy
+# Uncomment to block specific AI crawlers:
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: ClaudeBot
+# Disallow: /
+# User-agent: PerplexityBot
+# Disallow: /
+# User-agent: Google-Extended
+# Disallow: /
+
 Sitemap: https://example.com/sitemap.xml
 ```
+
+**AI crawler considerations:** Decide whether AI training crawlers should access your content. Blocking `Google-Extended` prevents AI training use while still allowing Google Search indexing. Review your policy regularly as this landscape evolves.
+
+## International SEO (hreflang)
+
+For multi-language sites, implement hreflang tags to indicate language/region variants:
+
+```typescript
+export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
+  const { lang, slug } = await params
+  return {
+    alternates: {
+      canonical: `https://example.com/${lang}/${slug}`,
+      languages: {
+        'en': `https://example.com/en/${slug}`,
+        'de': `https://example.com/de/${slug}`,
+        'x-default': `https://example.com/en/${slug}`,
+      },
+    },
+  }
+}
+```
+
+Include all language variants in sitemaps with `hreflang` annotations for proper indexing.

@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "Sanity": {
-      "type": "http",
-      "url": "https://mcp.sanity.io"
-    }
-  }
-}

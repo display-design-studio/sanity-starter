@@ -88,7 +88,7 @@ Ensure AI finds your authoritative version, not copies.
 AI systems prefer current information.
 
 - Display publish and update dates prominently
-- Update content regularly (even small updates signal freshness)
+- Update content regularly with substantive changes (superficial updates like changing dates without meaningful edits can be counterproductive)
 - Use `dateModified` in structured data
 
 ## Content Quality Signals
@@ -114,13 +114,32 @@ AI prefers content that fully answers questions.
 - Include definitions for technical terms
 - Address common misconceptions
 
+## Google AI Overviews
+
+Google's AI Overviews (formerly SGE) now appear in many search results. To optimize:
+
+- **Be the cited source:** AI Overviews cite specific pages. Concise, authoritative answers increase citation likelihood.
+- **Structure for extraction:** Use clear headings, direct answers, and lists that AI can easily parse.
+- **Cover follow-up questions:** AI Overviews often address related queries. Anticipate and answer them on the same page or link to dedicated pages.
+- **Monitor in Search Console:** Google Search Console provides data on AI Overview impressions and clicks.
+
+## AI Crawler Management
+
+Make conscious decisions about which AI systems can crawl your content:
+
+- **robots.txt directives:** Use `User-agent: GPTBot`, `ClaudeBot`, `PerplexityBot`, `Google-Extended` to control access.
+- **Allowing crawlers** increases chances of being cited as a source in AI responses.
+- **Blocking crawlers** prevents content from being used in AI training (but may reduce AI citations).
+- Review your policy regularly — this is one of the most actively evolving areas of SEO.
+
 ## Measuring AEO Success
 
 ### Monitor AI Mentions
 Track when AI assistants cite your content:
-- Search for your brand + "according to"
-- Monitor traffic from AI platforms
-- Check Perplexity, Bing Copilot responses
+- Use Google Search Console's AI Overview data for impression and click tracking
+- Monitor referral traffic from AI platforms (Perplexity, ChatGPT, Bing Copilot)
+- Search for your brand + "according to" in AI assistants
+- Consider third-party AEO tracking tools for comprehensive monitoring
 
 ### Track Zero-Click Queries
 If AI answers questions directly, traditional rankings matter less.

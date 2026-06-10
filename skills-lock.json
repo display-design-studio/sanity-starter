@@ -4,32 +4,38 @@
     "caveman": {
       "source": "display-design-studio/skills",
       "sourceType": "github",
+      "skillPath": "skills/caveman/SKILL.md",
       "computedHash": "a818cdc41dcfaa50dd891c5cb5e5705968338de02e7e37949ca56e8c30ad4176"
     },
     "content-experimentation-best-practices": {
       "source": "display-design-studio/skills",
       "sourceType": "github",
+      "skillPath": "skills/content-experimentation-best-practices/SKILL.md",
       "computedHash": "97c7d16a8a93362feb82ae569b5cf84e02845a2fb17d9a8cd528b96d76f304d3"
     },
     "content-modeling-best-practices": {
       "source": "display-design-studio/skills",
       "sourceType": "github",
+      "skillPath": "skills/content-modeling-best-practices/SKILL.md",
       "computedHash": "9f0c62274cf8ccf41dd32fc2f2629f4c9a8e5a920826f30c2eb226d7e796b031"
     },
     "sanity-best-practices": {
       "source": "display-design-studio/skills",
       "sourceType": "github",
-      "computedHash": "cc5b4bd65ddd554c2ba2faf14f11858e59b48f6e600c578551cc58cc81b3e084"
+      "skillPath": "skills/sanity-best-practices/SKILL.md",
+      "computedHash": "41e5c4c6caeba0b15207b7a0142cbcd87e2b59d2a5577e33dcf394a10fd9fd7c"
     },
     "sanity-schema-accelerator": {
       "source": "display-design-studio/skills",
       "sourceType": "github",
+      "skillPath": "skills/sanity-schema-accelerator/SKILL.md",
       "computedHash": "765fd7ac3d8211996c710596109d7264816659f10780c55f51f66b5ce3eca722"
     },
     "seo-aeo-best-practices": {
       "source": "display-design-studio/skills",
       "sourceType": "github",
-      "computedHash": "6894dcfcc3440903b3e81bfd47a9c2b5318a4933c7aa6403bca6de3921617303"
+      "skillPath": "skills/seo-aeo-best-practices/SKILL.md",
+      "computedHash": "edb99db85683ff99678fcb1bebc3a5653c3ea927eea9ee2534f19be86c7b8b81"
     }
   }
 }
