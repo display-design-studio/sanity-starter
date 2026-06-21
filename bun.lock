@@ -10,7 +10,7 @@
         "react": "^19.2.7",
         "react-dom": "^19.2.7",
         "sanity": "^6.1.0",
-        "sanity-plugin-media": "^4.3.1",
+        "sanity-plugin-media": "^4.3.5",
         "styled-components": "^6.4.2",
       },
       "devDependencies": {
@@ -415,7 +415,7 @@
 
     "@floating-ui/utils": ["@floating-ui/utils@0.2.11", "", {}, "sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg=="],
 
-    "@hookform/resolvers": ["@hookform/resolvers@3.10.0", "", { "peerDependencies": { "react-hook-form": "^7.0.0" } }, "sha512-79Dv+3mDF7i+2ajj7SkypSKHhl1cbln1OGavqrsF7p6mbUv11xpqpacPsGDCTRvCSjEEIez2ef1NveSVL3b0Ag=="],
+    "@hookform/resolvers": ["@hookform/resolvers@4.1.3", "", { "dependencies": { "@standard-schema/utils": "^0.3.0" }, "peerDependencies": { "react-hook-form": "^7.0.0" } }, "sha512-Jsv6UOWYTrEFJ/01ZrnwVXs7KDvP8XIo115i++5PWvNkNvkrsTfGiLS6w+eJ57CYtUtDQalUWovCZDHFJ8u1VQ=="],
 
     "@humanfs/core": ["@humanfs/core@0.19.2", "", { "dependencies": { "@humanfs/types": "^0.15.0" } }, "sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA=="],
 
@@ -1291,7 +1291,7 @@
 
     "graceful-fs": ["graceful-fs@4.2.10", "", {}, "sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA=="],
 
-    "groq": ["groq@3.99.0", "", {}, "sha512-ZwKAWzvVCw51yjmIf5484KgsAzZAlGTM4uy9lki4PjAYxcEME2Xf93d31LhHzgUAr2JI79H+cNKoRjDHdv1BXQ=="],
+    "groq": ["groq@6.1.0", "", {}, "sha512-r4Bpy/onjT+Bdrn2zfN5C/iwXxhYe8xRoF8bOXUldTCxut1vNwXDCOxORsEDB9ws2btHU6dfhWuzu9rr6+NIbw=="],
 
     "groq-js": ["groq-js@1.30.2", "", { "dependencies": { "debug": "^4.3.4" } }, "sha512-FqF7NNzBxya6Oq4VkTl9lg3W5Gjd3Cjwc6Et2OeAcTdmHOClwcYeAZkWR6wIm+KPtvESSYtzP59aj/+9egOKZQ=="],
 
@@ -1793,7 +1793,7 @@
 
     "react-focus-lock": ["react-focus-lock@2.13.7", "", { "dependencies": { "@babel/runtime": "^7.0.0", "focus-lock": "^1.3.6", "prop-types": "^15.6.2", "react-clientside-effect": "^1.2.7", "use-callback-ref": "^1.3.3", "use-sidecar": "^1.1.3" }, "peerDependencies": { "@types/react": "*", "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc" }, "optionalPeers": ["@types/react"] }, "sha512-20lpZHEQrXPb+pp1tzd4ULL6DyO5D2KnR0G69tTDdydrmNhU7pdFmbQUYVyHUgp+xN29IuFR0PVuhOmvaZL9Og=="],
 
-    "react-hook-form": ["react-hook-form@7.78.0", "", { "peerDependencies": { "react": "^16.8.0 || ^17 || ^18 || ^19" } }, "sha512-EEZqc+N23moyzTlz61Pj+JvcXo76ICkpfOZo8JZw+sM4+wLQGh6nI2Ms+PdMOYNluFu0ghlM7B8mCzhRYtJCnA=="],
+    "react-hook-form": ["react-hook-form@7.80.0", "", { "peerDependencies": { "react": "^16.8.0 || ^17 || ^18 || ^19" } }, "sha512-4P+fk6oXsxY+6xSj7Euhc2sumQD8zQqCuVHoJwoyp9EchP+IUW9OESB7uHFJOKsIBQ4MQqYE84INJFqUCYNoOg=="],
 
     "react-i18next": ["react-i18next@17.0.8", "", { "dependencies": { "@babel/runtime": "^7.29.2", "html-parse-stringify": "^3.0.1", "use-sync-external-store": "^1.6.0" }, "peerDependencies": { "i18next": ">= 26.2.0", "react": ">= 16.8.0", "react-dom": "*", "react-native": "*", "typescript": "^5 || ^6" }, "optionalPeers": ["react-dom", "react-native", "typescript"] }, "sha512-0ooKbGLU8JXhe1zwpQUWIeXSgLPOfwJmgheWRIUpcoA0CpyabpGhayjdG+/eA5esC1AQ8h2jWpXjJfzQzeDOCw=="],
 
@@ -1889,7 +1889,7 @@
 
     "sanity": ["sanity@6.1.0", "", { "dependencies": { "@algorithm.ts/lcs": "^4.0.5", "@date-fns/tz": "^1.5.0", "@dnd-kit/core": "^6.3.1", "@dnd-kit/modifiers": "^6.0.1", "@dnd-kit/sortable": "^7.0.2", "@dnd-kit/utilities": "^3.2.2", "@isaacs/ttlcache": "^1.4.1", "@mux/mux-player-react": "^3.13.0", "@portabletext/editor": "^7.5.0", "@portabletext/html": "^1.0.2", "@portabletext/patches": "^2.0.4", "@portabletext/plugin-markdown-shortcuts": "^8.0.16", "@portabletext/plugin-one-line": "^7.0.16", "@portabletext/plugin-paste-link": "^4.0.16", "@portabletext/plugin-typography": "^8.0.16", "@portabletext/react": "^6.2.0", "@portabletext/sanity-bridge": "^3.1.2", "@portabletext/to-html": "^5.0.2", "@portabletext/toolkit": "^5.0.2", "@rexxars/react-json-inspector": "^9.0.1", "@sanity/asset-utils": "^2.3.0", "@sanity/bifur-client": "^1.0.0", "@sanity/cli": "^7.2.3", "@sanity/client": "^7.22.1", "@sanity/color": "^3.0.6", "@sanity/comlink": "^4.0.1", "@sanity/diff": "6.1.0", "@sanity/diff-match-patch": "^3.2.0", "@sanity/diff-patch": "^5.0.0", "@sanity/eventsource": "^5.0.2", "@sanity/icons": "^3.7.4", "@sanity/id-utils": "^1.0.0", "@sanity/image-url": "^2.1.1", "@sanity/insert-menu": "^3.0.8", "@sanity/logos": "^2.2.2", "@sanity/media-library-types": "^1.4.0", "@sanity/message-protocol": "^0.23.0", "@sanity/migrate": "^7.0.2", "@sanity/mutate": "^0.18.1", "@sanity/mutator": "6.1.0", "@sanity/presentation-comlink": "^2.1.0", "@sanity/preview-url-secret": "^4.0.7", "@sanity/prism-groq": "^1.1.2", "@sanity/schema": "6.1.0", "@sanity/sdk": "^2.14.0", "@sanity/telemetry": "^1.1.0", "@sanity/types": "6.1.0", "@sanity/ui": "^3.2.0", "@sanity/util": "6.1.0", "@sanity/uuid": "^3.0.2", "@sentry/react": "^8.55.2", "@tanstack/react-table": "^8.21.3", "@tanstack/react-virtual": "^3.14.2", "@xstate/react": "^6.1.0", "classnames": "^2.2.5", "color2k": "^2.0.3", "dataloader": "^2.2.3", "date-fns": "^4.1.0", "debug": "^4.4.3", "exif-component": "^1.0.1", "fast-deep-equal": "3.1.3", "groq-js": "^1.30.2", "history": "^5.3.0", "i18next": "^26.2.0", "is-hotkey-esm": "^1.0.0", "isomorphic-dompurify": "2.26.0", "json-reduce": "^3.0.0", "json-stable-stringify": "^1.3.0", "lodash-es": "^4.18.1", "mendoza": "^3.0.8", "motion": "^12.40.0", "nano-pubsub": "^3.0.0", "nanoid": "^3.3.11", "observable-callback": "^1.0.3", "path-to-regexp": "^6.3.0", "player.style": "^0.1.9", "polished": "^4.3.1", "quick-lru": "^7.3.0", "raf": "^3.4.1", "react-fast-compare": "^3.2.2", "react-focus-lock": "^2.13.7", "react-i18next": "^17.0.8", "react-is": "^19.2.7", "react-refractor": "^4.0.0", "react-rx": "^4.2.2", "refractor": "^5.0.0", "rxjs": "^7.8.2", "rxjs-exhaustmap-with-trailing": "^2.1.1", "rxjs-mergemap-array": "^0.1.0", "scroll-into-view-if-needed": "^3.1.0", "scrollmirror": "^1.2.4", "semver": "^7.7.2", "shallow-equals": "^1.0.0", "speakingurl": "^14.0.1", "urlpattern-polyfill": "10.1.0", "use-device-pixel-ratio": "^1.1.2", "use-hot-module-reload": "^2.0.0", "use-sync-external-store": "^1.6.0", "uuid": "^11.1.0", "web-vitals": "^5.3.0", "xstate": "^5.32.0" }, "peerDependencies": { "react": "^19.2.2", "react-dom": "^19.2.2", "styled-components": "^6.1.15" }, "bin": { "sanity": "./bin/sanity" } }, "sha512-9x1xpH45OPKbkqkRG8t0LgpcwwNZ632kZwPnu27JUgFQNfsrgLWEKaFEbPAo/G12EhdIG0PoABHgM7TODJ7Tzw=="],
 
-    "sanity-plugin-media": ["sanity-plugin-media@4.3.1", "", { "dependencies": { "@hookform/resolvers": "^3.1.1", "@reduxjs/toolkit": "^2.6.0", "@sanity/client": "^7.13.2", "@sanity/color": "^3.0.6", "@sanity/icons": "^3.7.0", "@sanity/incompatible-plugin": "^1.0.5", "@sanity/ui": "^3.0.5", "@sanity/uuid": "^3.0.1", "@tanem/react-nprogress": "^5.0.55", "copy-to-clipboard": "^3.3.1", "date-fns": "^4.0.0", "filesize": "^9.0.0", "groq": "^3.0.0", "is-hotkey-esm": "^1.0.0", "nanoid": "^3.3.8", "pluralize": "^8.0.0", "react-dropzone": "^11.3.1", "react-file-icon": "^1.6.0", "react-hook-form": "^7.54.2", "react-redux": "^9.2.0", "react-select": "^5.10.1", "react-virtuoso": "^4.12.5", "redux": "^5.0.1", "redux-observable": "3.0.0-rc.2", "rxjs": "^7.8.1", "zod": "^3.21.4" }, "peerDependencies": { "react": "^18.3 || ^19", "react-dom": "^18.3 || ^19", "react-is": "^18.3 || ^19", "sanity": "^3.78 || ^4.0.0-0 || ^5 || ^6.0.0-0", "styled-components": "^6.1" } }, "sha512-SK9bTOevYUoKv3/2T2xFyuALT+Tyf+FR83Q1sC2oG/JkgdAXs7iWWJHQjnURtJR81935RL7yg3/0sMoJmPjj4g=="],
+    "sanity-plugin-media": ["sanity-plugin-media@4.3.6", "", { "dependencies": { "@hookform/resolvers": "^4.1.3", "@reduxjs/toolkit": "^2.12.0", "@sanity/client": "^7.23.0", "@sanity/color": "^3.0.6", "@sanity/icons": "^3.7.4", "@sanity/incompatible-plugin": "^1.0.5", "@sanity/ui": "^3.2.0", "@sanity/uuid": "^3.0.3", "@tanem/react-nprogress": "^5.0.63", "copy-to-clipboard": "^3.3.3", "date-fns": "^4.0.0", "filesize": "^9.0.11", "groq": "^6.1.0", "is-hotkey-esm": "^1.0.0", "nanoid": "^3.3.12", "pluralize": "^8.0.0", "react-dropzone": "^11.7.1", "react-file-icon": "^1.6.0", "react-hook-form": "^7.79.0", "react-redux": "^9.3.0", "react-select": "^5.10.2", "react-virtuoso": "^4.18.7", "redux": "^5.0.1", "redux-observable": "3.0.0-rc.2", "rxjs": "^7.8.2", "zod": "^3.25.76" }, "peerDependencies": { "react": "^18.3 || ^19", "react-dom": "^18.3 || ^19", "react-is": "^18.3 || ^19", "sanity": "^3.78 || ^4.0.0-0 || ^5 || ^6.0.0-0", "styled-components": "^6.1" } }, "sha512-uOzn8pumkBSEMQQkgv8qkEdHW0Q+jWVXoqFDEHcmggWxJJi66CP2CKGASg+hyK8zmkieaxdHe/vtS4B+Mndw+g=="],
 
     "saxes": ["saxes@6.0.0", "", { "dependencies": { "xmlchars": "^2.2.0" } }, "sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA=="],
 
@@ -2247,8 +2247,6 @@
 
     "@sanity/codegen/chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
 
-    "@sanity/codegen/groq": ["groq@6.1.0", "", {}, "sha512-r4Bpy/onjT+Bdrn2zfN5C/iwXxhYe8xRoF8bOXUldTCxut1vNwXDCOxORsEDB9ws2btHU6dfhWuzu9rr6+NIbw=="],
-
     "@sanity/codegen/zod": ["zod@4.4.3", "", {}, "sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ=="],
 
     "@sanity/comlink/uuid": ["uuid@13.0.2", "", { "bin": { "uuid": "dist-node/bin/uuid" } }, "sha512-vzi9uRZ926x4XV73S/4qQaTwPXM2JBj6/6lI/byHH1jOpCzb0zDbfytgA9LcN/hzb2l7WQSQnxITOVx5un/wGw=="],
@@ -2354,6 +2352,10 @@
     "readable-stream/safe-buffer": ["safe-buffer@5.1.2", "", {}, "sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g=="],
 
     "sanity/quick-lru": ["quick-lru@7.3.0", "", {}, "sha512-k9lSsjl36EJdK7I06v7APZCbyGT2vMTsYSRX1Q2nbYmnkBqgUhRkAuzH08Ciotteu/PLJmIF2+tti7o3C/ts2g=="],
+
+    "sanity-plugin-media/@sanity/client": ["@sanity/client@7.23.0", "", { "dependencies": { "@sanity/eventsource": "^5.0.2", "get-it": "^8.8.0", "nanoid": "^3.3.11", "rxjs": "^7.0.0" } }, "sha512-4VFcLeP/lD0lhe5TD102tSnoW72ERT6xD/ZLb9pdLNMbZgbOciAy3m0hAYvs1vjA6663ZjNM6SLwl1Utq97DHA=="],
+
+    "sanity-plugin-media/@sanity/uuid": ["@sanity/uuid@3.0.3", "", { "dependencies": { "uuid": "^11.0.0" } }, "sha512-aJvKuFwzcZKRwuIjrRPfXfXKpSdnLF4CnedV5WcX1n5SzhufvRNHIot5lkx1+Y1DwiMVQOZ5gDSPJH+P6Ao70A=="],
 
     "source-map-support/source-map": ["source-map@0.6.1", "", {}, "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g=="],
 
