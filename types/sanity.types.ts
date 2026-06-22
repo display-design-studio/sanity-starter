@@ -16,7 +16,7 @@ export declare const internalGroqTypeReferenceTo: unique symbol;
 
 // Source: types/schema.json
 export type Embed = {
-  desktop: string;
+  desktop?: string;
   mobile?: string;
 };
 
@@ -35,7 +35,7 @@ export type PageReference = {
 };
 
 export type Ref = {
-  type: "internal" | "external" | "file";
+  type?: "internal" | "external" | "file";
   internalRef?: HomeReference | PageReference;
   externalRef?: string;
   fileRef?: FileRef;
@@ -79,7 +79,7 @@ export type FileRef = {
 
 export type Media = {
   _type: "media";
-  type: "image" | "video" | "embed";
+  type?: "image" | "video" | "embed";
   image?: Picture;
   video?: Video;
   embed?: Embed;
@@ -119,8 +119,8 @@ export type Picture = {
 
 export type Cta = {
   _type: "cta";
-  label: LocaleString;
-  ref: Ref;
+  label?: LocaleString;
+  ref?: Ref;
 };
 
 export type LocaleSlug = {
@@ -199,8 +199,8 @@ export type Footer = {
     _key: string;
   } & Cta>;
   socials?: Array<{
-    label: string;
-    url: string;
+    label?: string;
+    url?: string;
     _type: "socialLink";
     _key: string;
   }>;
@@ -208,18 +208,18 @@ export type Footer = {
 
 export type SanityImageCrop = {
   _type: "sanity.imageCrop";
-  top: number;
-  bottom: number;
-  left: number;
-  right: number;
+  top?: number;
+  bottom?: number;
+  left?: number;
+  right?: number;
 };
 
 export type SanityImageHotspot = {
   _type: "sanity.imageHotspot";
-  x: number;
-  y: number;
-  height: number;
-  width: number;
+  x?: number;
+  y?: number;
+  height?: number;
+  width?: number;
 };
 
 export type Header = {
@@ -269,7 +269,7 @@ export type Page = {
 
 export type Slug = {
   _type: "slug";
-  current: string;
+  current?: string;
   source?: string;
 };
 
@@ -303,9 +303,9 @@ export type SanityImagePalette = {
 
 export type SanityImageDimensions = {
   _type: "sanity.imageDimensions";
-  height: number;
-  width: number;
-  aspectRatio: number;
+  height?: number;
+  width?: number;
+  aspectRatio?: number;
 };
 
 export type SanityImageMetadata = {
@@ -331,14 +331,14 @@ export type SanityFileAsset = {
   title?: string;
   description?: string;
   altText?: string;
-  sha1hash: string;
-  extension: string;
-  mimeType: string;
-  size: number;
-  assetId: string;
+  sha1hash?: string;
+  extension?: string;
+  mimeType?: string;
+  size?: number;
+  assetId?: string;
   uploadId?: string;
-  path: string;
-  url: string;
+  path?: string;
+  url?: string;
   source?: SanityAssetSourceData;
 };
 
@@ -360,14 +360,14 @@ export type SanityImageAsset = {
   title?: string;
   description?: string;
   altText?: string;
-  sha1hash: string;
-  extension: string;
-  mimeType: string;
-  size: number;
-  assetId: string;
+  sha1hash?: string;
+  extension?: string;
+  mimeType?: string;
+  size?: number;
+  assetId?: string;
   uploadId?: string;
-  path: string;
-  url: string;
+  path?: string;
+  url?: string;
   metadata?: SanityImageMetadata;
   source?: SanityAssetSourceData;
 };
@@ -424,3 +424,4 @@ declare module "@sanity/client" {
     "\n  *[_type == \"page\" && slug[$lang].current == $slug][0] {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n    content\n  }\n": PAGE_BY_SLUG_QUERY_RESULT;
   }
 }
+
