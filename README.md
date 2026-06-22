@@ -3,7 +3,7 @@
     <img src="https://avatars.githubusercontent.com/u/118281951?s=400&u=3ba5b42657ae2ac1a064b998b6110ea422317790&v=0" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">Sanity Starter</h3>
-  <p align="center">A starter template for Sanity projects with built-in localization utilities, presentation tool, and automatic types generation.
+  <p align="center">A Sanity Studio v6 starter template with built-in localization utilities, presentation tool, and automatic types generation.
 </p>
 </div>
 <br>
@@ -22,14 +22,19 @@
 ## Plugins Used
 
 - [`@sanity/language-filter`](https://www.npmjs.com/package/@sanity/language-filter): Language filter for Sanity Studio
-- [`sanity-plugin-media-i18n`](https://www.npmjs.com/package/sanity-plugin-media-i18n): Internationalization for media fields (For translated altTexts)
+- [`sanity-plugin-media`](https://www.npmjs.com/package/sanity-plugin-media): Digital asset manager for Sanity Studio
+
+## AI & MCP
+
+Install the [Sanity MCP server](https://www.sanity.io/docs/ai/mcp-server) to let your AI assistant query, create, and patch documents directly — with automatic schema awareness, no manual context needed. Pair it with [`AGENTS.md`](./AGENTS.md) for full project context across Claude, Cursor, Copilot, and other AI tools.
 
 ## Scripts
 
 - `dev`: Start Sanity Studio in development mode
 - `build`: Build the Studio and generate types
 - `deploy`: Deploy the Studio
-- `generate-types`: Extract schema and generate TypeScript types
+- `typegen`: Extract schema and generate TypeScript types
+- `typegen:watch`: Watch mode for type generation
 
 ## Getting Started
 
@@ -49,7 +54,7 @@
    ```
 4. Generate types:
    ```bash
-   bun run generate-types
+   bun run typegen
    ```
 
 ## License
