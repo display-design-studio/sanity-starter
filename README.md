@@ -12,7 +12,13 @@
 
 - Localization utilities for multilingual content
   - Types: [localeBlock](/schemaTypes/custom-types/localeBlock.ts), [localeSlug](/schemaTypes/custom-types/localeSlug.ts), [localeString](/schemaTypes/custom-types/localeString.ts), [localeText](/schemaTypes/custom-types/localeText.ts)
-  - Utils: Languages array -> [localization.ts](/utils/localization.ts)
+  - Utils: Languages array -> [localization.ts](/utils/localization.ts), locale type factory -> [locale.ts](/utils/locale.ts)
+
+- Schema utilities — `hiddenUnless` and `requireWhen` helpers for conditional field logic
+  - [schema.ts](/utils/schema.ts)
+
+- Typed GROQ queries with auto-generated TypeScript result types
+  - [queries/index.ts](/queries/index.ts)
 
 - Presentation tool for custom document views
   - [resolve.ts](/presentation/resolve.ts)
