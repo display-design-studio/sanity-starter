@@ -1,5 +1,6 @@
 import {BlockContentIcon} from '@sanity/icons'
 import {defineField, defineType} from 'sanity'
+import {hiddenUnless} from '../../utils/schema'
 
 export const media = defineType({
   name: 'media',
@@ -26,7 +27,7 @@ export const media = defineType({
       name: 'image',
       title: 'Image',
       type: 'picture',
-      hidden: ({parent}) => parent?.type !== 'image',
+      hidden: hiddenUnless('image'),
       validation: (rule) =>
         rule.custom((value, context) => {
           const parent = context.parent as {type?: string} | undefined
@@ -41,7 +42,7 @@ export const media = defineType({
       name: 'video',
       title: 'Video',
       type: 'video',
-      hidden: ({parent}) => parent?.type !== 'video',
+      hidden: hiddenUnless('video'),
       validation: (rule) =>
         rule.custom((value, context) => {
           const parent = context.parent as {type?: string} | undefined
@@ -56,7 +57,7 @@ export const media = defineType({
       name: 'embed',
       title: 'Embed',
       type: 'object',
-      hidden: ({parent}) => parent?.type !== 'embed',
+      hidden: hiddenUnless('embed'),
       validation: (rule) =>
         rule.custom((value, context) => {
           const parent = context.parent as {type?: string} | undefined

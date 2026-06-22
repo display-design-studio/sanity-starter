@@ -25,7 +25,53 @@ export const HOME_QUERY = defineQuery(`
     _type,
     title,
     description,
-    content
+    content,
+    media,
+    cta,
+    seo
+  }
+`)
+
+// ─── Header ──────────────────────────────────────────────────────────────────
+
+export const HEADER_QUERY = defineQuery(`
+  *[_type == "header"][0] {
+    _id,
+    _type,
+    logo,
+    navigation[] {
+      label,
+      ref {
+        type,
+        internalRef->{_id, _type, slug},
+        externalRef,
+        fileRef{asset->}
+      }
+    }
+  }
+`)
+
+// ─── Footer ──────────────────────────────────────────────────────────────────
+
+export const FOOTER_QUERY = defineQuery(`
+  *[_type == "footer"][0] {
+    _id,
+    _type,
+    logo,
+    companyInfo,
+    navigation[] {
+      label,
+      ref {
+        type,
+        internalRef->{_id, _type, slug},
+        externalRef,
+        fileRef{asset->}
+      }
+    },
+    socials[] {
+      label,
+      url
+    }
   }
 `)
 
@@ -48,6 +94,7 @@ export const PAGE_BY_SLUG_QUERY = defineQuery(`
     title,
     slug,
     description,
-    content
+    content,
+    seo
   }
 `)

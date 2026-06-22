@@ -1,6 +1,7 @@
 import {SparklesIcon} from '@sanity/icons'
 import {defineField, defineType} from 'sanity'
 import {baseLanguage} from '../../utils/localization'
+import {hiddenUnless, requireWhen} from '../../utils/schema'
 
 export const cta = defineType({
   name: 'cta',
@@ -41,23 +42,17 @@ export const cta = defineType({
           title: 'Reference',
           type: 'reference',
           to: [{type: 'home'}, {type: 'page'}],
-          hidden: ({parent}) => parent?.type !== 'internal',
-          validation: (rule) =>
-            rule.custom((value, context) => {
-              const parent = context.parent as {type?: string} | undefined
-
-              return parent?.type !== 'internal' || value ? true : 'Internal reference is required'
-            }),
+          hidden: hiddenUnless('internal'),
+          validation: requireWhen('internal', 'Internal reference is required'),
         }),
         defineField({
           name: 'externalRef',
           title: 'External URL',
           type: 'url',
-          hidden: ({parent}) => parent?.type !== 'external',
+          hidden: hiddenUnless('external'),
           validation: (rule) =>
             rule.uri({scheme: ['http', 'https', 'mailto', 'tel']}).custom((value, context) => {
               const parent = context.parent as {type?: string} | undefined
-
               return parent?.type !== 'external' || value ? true : 'External URL is required'
             }),
         }),
@@ -65,13 +60,8 @@ export const cta = defineType({
           name: 'fileRef',
           title: 'File',
           type: 'file',
-          hidden: ({parent}) => parent?.type !== 'file',
-          validation: (rule) =>
-            rule.custom((value, context) => {
-              const parent = context.parent as {type?: string} | undefined
-
-              return parent?.type !== 'file' || value?.asset ? true : 'File is required'
-            }),
+          hidden: hiddenUnless('file'),
+          validation: requireWhen('file', 'File is required', (v) => !!(v as {asset?: unknown})?.asset),
         }),
       ],
     }),

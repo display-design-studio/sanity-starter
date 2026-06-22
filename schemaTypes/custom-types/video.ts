@@ -13,6 +13,7 @@ export const video = defineType({
       title: 'Desktop',
       type: 'file',
       options: {accept: 'video/mp4'},
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'mobile',

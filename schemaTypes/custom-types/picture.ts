@@ -13,6 +13,7 @@ export const picture = defineType({
       title: 'Desktop',
       type: 'image',
       options: {hotspot: true},
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'mobile',

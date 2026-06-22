@@ -383,13 +383,129 @@ export type AllSanitySchemaTypes = Embed | HomeReference | PageReference | Ref |
 
 // Source: queries/index.ts
 // Variable: HOME_QUERY
-// Query: *[_type == "home"][0] {    _id,    _type,    title,    description,    content  }
+// Query: *[_type == "home"][0] {    _id,    _type,    title,    description,    content,    media,    cta,    seo  }
 export type HOME_QUERY_RESULT = {
   _id: string;
   _type: "home";
   title: LocaleString | null;
   description: LocaleText | null;
   content: LocaleBlock | null;
+  media: Media | null;
+  cta: Cta | null;
+  seo: Seo | null;
+} | null;
+
+// Source: queries/index.ts
+// Variable: HEADER_QUERY
+// Query: *[_type == "header"][0] {    _id,    _type,    logo,    navigation[] {      label,      ref {        type,        internalRef->{_id, _type, slug},        externalRef,        fileRef{asset->}      }    }  }
+export type HEADER_QUERY_RESULT = {
+  _id: string;
+  _type: "header";
+  logo: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  } | null;
+  navigation: Array<{
+    label: LocaleString | null;
+    ref: {
+      type: "external" | "file" | "internal" | null;
+      internalRef: {
+        _id: string;
+        _type: "home";
+        slug: null;
+      } | {
+        _id: string;
+        _type: "page";
+        slug: LocaleSlug | null;
+      } | null;
+      externalRef: string | null;
+      fileRef: {
+        asset: {
+          _id: string;
+          _type: "sanity.fileAsset";
+          _createdAt: string;
+          _updatedAt: string;
+          _rev: string;
+          originalFilename?: string;
+          label?: string;
+          title?: string;
+          description?: string;
+          altText?: string;
+          sha1hash?: string;
+          extension?: string;
+          mimeType?: string;
+          size?: number;
+          assetId?: string;
+          uploadId?: string;
+          path?: string;
+          url?: string;
+          source?: SanityAssetSourceData;
+        } | null;
+      } | null;
+    } | null;
+  }> | null;
+} | null;
+
+// Source: queries/index.ts
+// Variable: FOOTER_QUERY
+// Query: *[_type == "footer"][0] {    _id,    _type,    logo,    companyInfo,    navigation[] {      label,      ref {        type,        internalRef->{_id, _type, slug},        externalRef,        fileRef{asset->}      }    },    socials[] {      label,      url    }  }
+export type FOOTER_QUERY_RESULT = {
+  _id: string;
+  _type: "footer";
+  logo: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  } | null;
+  companyInfo: LocaleText | null;
+  navigation: Array<{
+    label: LocaleString | null;
+    ref: {
+      type: "external" | "file" | "internal" | null;
+      internalRef: {
+        _id: string;
+        _type: "home";
+        slug: null;
+      } | {
+        _id: string;
+        _type: "page";
+        slug: LocaleSlug | null;
+      } | null;
+      externalRef: string | null;
+      fileRef: {
+        asset: {
+          _id: string;
+          _type: "sanity.fileAsset";
+          _createdAt: string;
+          _updatedAt: string;
+          _rev: string;
+          originalFilename?: string;
+          label?: string;
+          title?: string;
+          description?: string;
+          altText?: string;
+          sha1hash?: string;
+          extension?: string;
+          mimeType?: string;
+          size?: number;
+          assetId?: string;
+          uploadId?: string;
+          path?: string;
+          url?: string;
+          source?: SanityAssetSourceData;
+        } | null;
+      } | null;
+    } | null;
+  }> | null;
+  socials: Array<{
+    label: string | null;
+    url: string | null;
+  }> | null;
 } | null;
 
 // Source: queries/index.ts
@@ -405,7 +521,7 @@ export type PAGES_QUERY_RESULT = Array<{
 
 // Source: queries/index.ts
 // Variable: PAGE_BY_SLUG_QUERY
-// Query: *[_type == "page" && slug[$lang].current == $slug][0] {    _id,    _type,    title,    slug,    description,    content  }
+// Query: *[_type == "page" && slug[$lang].current == $slug][0] {    _id,    _type,    title,    slug,    description,    content,    seo  }
 export type PAGE_BY_SLUG_QUERY_RESULT = {
   _id: string;
   _type: "page";
@@ -413,15 +529,18 @@ export type PAGE_BY_SLUG_QUERY_RESULT = {
   slug: LocaleSlug | null;
   description: LocaleText | null;
   content: LocaleBlock | null;
+  seo: Seo | null;
 } | null;
 
 // Query TypeMap
 import "@sanity/client";
 declare module "@sanity/client" {
   interface SanityQueries {
-    "\n  *[_type == \"home\"][0] {\n    _id,\n    _type,\n    title,\n    description,\n    content\n  }\n": HOME_QUERY_RESULT;
+    "\n  *[_type == \"home\"][0] {\n    _id,\n    _type,\n    title,\n    description,\n    content,\n    media,\n    cta,\n    seo\n  }\n": HOME_QUERY_RESULT;
+    "\n  *[_type == \"header\"][0] {\n    _id,\n    _type,\n    logo,\n    navigation[] {\n      label,\n      ref {\n        type,\n        internalRef->{_id, _type, slug},\n        externalRef,\n        fileRef{asset->}\n      }\n    }\n  }\n": HEADER_QUERY_RESULT;
+    "\n  *[_type == \"footer\"][0] {\n    _id,\n    _type,\n    logo,\n    companyInfo,\n    navigation[] {\n      label,\n      ref {\n        type,\n        internalRef->{_id, _type, slug},\n        externalRef,\n        fileRef{asset->}\n      }\n    },\n    socials[] {\n      label,\n      url\n    }\n  }\n": FOOTER_QUERY_RESULT;
     "\n  *[_type == \"page\"] | order(_createdAt asc) {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n  }\n": PAGES_QUERY_RESULT;
-    "\n  *[_type == \"page\" && slug[$lang].current == $slug][0] {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n    content\n  }\n": PAGE_BY_SLUG_QUERY_RESULT;
+    "\n  *[_type == \"page\" && slug[$lang].current == $slug][0] {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n    content,\n    seo\n  }\n": PAGE_BY_SLUG_QUERY_RESULT;
   }
 }
 
