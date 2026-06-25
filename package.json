@@ -17,6 +17,7 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/icons": "^3.7.4",
     "@sanity/language-filter": "^5.0.4",
     "@sanity/vision": "^6.1.0",
     "react": "^19.2.7",
