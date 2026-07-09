@@ -6,12 +6,12 @@
       "name": "sanity-starter",
       "dependencies": {
         "@sanity/icons": "^4.1.0",
-        "@sanity/language-filter": "^5.0.6",
-        "@sanity/vision": "^6.3.0",
+        "@sanity/language-filter": "^5.0.7",
+        "@sanity/vision": "^6.4.0",
         "react": "^19.2.7",
         "react-dom": "^19.2.7",
-        "sanity": "^6.3.0",
-        "sanity-plugin-media": "^5.0.10",
+        "sanity": "^6.4.0",
+        "sanity-plugin-media": "^5.0.11",
         "styled-components": "^6.4.3",
       },
       "devDependencies": {
