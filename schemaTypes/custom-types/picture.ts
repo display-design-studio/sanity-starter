@@ -1,5 +1,5 @@
-import {ImageIcon} from '@sanity/icons'
-import {defineField, defineType} from 'sanity'
+import { ImageIcon } from '@sanity/icons/Image'
+import { defineField, defineType } from 'sanity'
 
 export const picture = defineType({
   name: 'picture',

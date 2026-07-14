@@ -1,7 +1,7 @@
-import {SparklesIcon} from '@sanity/icons'
-import {defineField, defineType} from 'sanity'
-import {baseLanguage} from '../../utils/localization'
-import {hiddenUnless, requireWhen} from '../../utils/schema'
+import { SparklesIcon } from '@sanity/icons/Sparkles'
+import { defineField, defineType } from 'sanity'
+import { baseLanguage } from '../../utils/localization'
+import { hiddenUnless, requireWhen } from '../../utils/schema'
 
 export const cta = defineType({
   name: 'cta',

@@ -1,5 +1,5 @@
-import {CogIcon} from '@sanity/icons'
-import type {StructureBuilder} from 'sanity/structure'
+import { CogIcon } from '@sanity/icons/Cog'
+import type { StructureBuilder } from 'sanity/structure'
 
 export const siteNavigation = (S: StructureBuilder) =>
   S.listItem()

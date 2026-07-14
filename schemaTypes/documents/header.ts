@@ -1,5 +1,5 @@
-import {DocumentIcon} from '@sanity/icons'
-import {defineArrayMember, defineField, defineType} from 'sanity'
+import { DocumentIcon } from '@sanity/icons/Document'
+import { defineArrayMember, defineField, defineType } from 'sanity'
 
 export const header = defineType({
   name: 'header',

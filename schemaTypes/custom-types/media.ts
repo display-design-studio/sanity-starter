@@ -1,6 +1,6 @@
-import {BlockContentIcon} from '@sanity/icons'
-import {defineField, defineType} from 'sanity'
-import {hiddenUnless} from '../../utils/schema'
+import { BlockContentIcon } from '@sanity/icons/BlockContent'
+import { defineField, defineType } from 'sanity'
+import { hiddenUnless } from '../../utils/schema'
 
 export const media = defineType({
   name: 'media',
