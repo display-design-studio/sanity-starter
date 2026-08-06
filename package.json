@@ -17,20 +17,20 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/icons": "^5.1.0",
-    "@sanity/language-filter": "^5.0.7",
-    "@sanity/vision": "^6.4.0",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "sanity": "^6.4.0",
-    "sanity-plugin-media": "^5.0.11",
-    "styled-components": "^6.4.3"
+    "@sanity/icons": "^5.2.1",
+    "@sanity/language-filter": "^5.0.14",
+    "@sanity/vision": "^6.9.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "sanity": "^6.9.0",
+    "sanity-plugin-media": "^5.0.13",
+    "styled-components": "^6.5.0"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^6.0.0",
-    "@types/react": "^19.2.17",
-    "eslint": "^10.6.0",
-    "prettier": "^3.9.4",
+    "@types/react": "^19.2.18",
+    "eslint": "^10.8.0",
+    "prettier": "^3.9.6",
     "typescript": "^6.0.3"
   },
   "prettier": {
