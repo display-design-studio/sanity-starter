@@ -5,13 +5,13 @@
       "source": "display-design-studio/skills",
       "sourceType": "github",
       "skillPath": "skills/caveman/SKILL.md",
-      "computedHash": "a818cdc41dcfaa50dd891c5cb5e5705968338de02e7e37949ca56e8c30ad4176"
+      "computedHash": "1902fa0b569912d0c05736d8d98a72097d9b82719aac88c0c1d03bb546f9176d"
     },
     "content-experimentation-best-practices": {
       "source": "display-design-studio/skills",
       "sourceType": "github",
       "skillPath": "skills/content-experimentation-best-practices/SKILL.md",
-      "computedHash": "97c7d16a8a93362feb82ae569b5cf84e02845a2fb17d9a8cd528b96d76f304d3"
+      "computedHash": "13357b87af0cf35ea8df33e9b47ffbe149825de93cfba9881f8a651bea347d92"
     },
     "content-modeling-best-practices": {
       "source": "display-design-studio/skills",
@@ -23,7 +23,7 @@
       "source": "display-design-studio/skills",
       "sourceType": "github",
       "skillPath": "skills/sanity-best-practices/SKILL.md",
-      "computedHash": "189a17cf67bae9ae1087d47e78156952d19312db02a6a75a7dc1f2da30cf1174"
+      "computedHash": "0d771d6e44b0812c28c9d8beeb9ab19bd6da15a0913df4e611ccea1baa23b6a8"
     },
     "sanity-schema-accelerator": {
       "source": "display-design-studio/skills",
