@@ -593,8 +593,7 @@ export type PAGE_BY_SLUG_QUERY_RESULT = {
 } | null
 
 // Query TypeMap
-import '@sanity/client'
-declare module '@sanity/client' {
+declare global {
   interface SanityQueries {
     '\n  *[_type == "home"][0] {\n    _id,\n    _type,\n    title,\n    description,\n    content,\n    media,\n    cta,\n    seo\n  }\n': HOME_QUERY_RESULT
     '\n  *[_type == "header"][0] {\n    _id,\n    _type,\n    logo,\n    navigation[] {\n      label,\n      ref {\n        type,\n        internalRef->{_id, _type, slug},\n        externalRef,\n        fileRef{asset->}\n      }\n    }\n  }\n': HEADER_QUERY_RESULT
@@ -602,4 +601,8 @@ declare module '@sanity/client' {
     '\n  *[_type == "page"] | order(_createdAt asc) {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n  }\n': PAGES_QUERY_RESULT
     '\n  *[_type == "page" && slug[$lang].current == $slug][0] {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n    content,\n    seo\n  }\n': PAGE_BY_SLUG_QUERY_RESULT
   }
+}
+// Lets @sanity/client releases that predate the global registry read it too
+declare module '@sanity/client' {
+  interface SanityQueries extends globalThis.SanityQueries {}
 }
