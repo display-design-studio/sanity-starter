@@ -10,8 +10,11 @@
     "build": "sanity build && bun run typegen",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
-    "typegen": "sanity schema extract --enforce-required-fields --path types && sanity typegen generate",
-    "typegen:watch": "sanity typegen generate --watch"
+    "typegen": "sanity schema extract --enforce-required-fields --force && sanity typegen generate",
+    "typegen:watch": "sanity typegen generate --watch",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write ."
   },
   "keywords": [
     "sanity"
@@ -23,15 +26,16 @@
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "sanity": "^6.18.0",
-    "sanity-plugin-media": "^6.3.3",
-    "styled-components": "^6.5.3"
+    "sanity-plugin-media": "^6.3.4",
+    "styled-components": "^6.6.0"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^7.0.0",
+    "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",
     "eslint": "^10.12.0",
     "prettier": "^3.9.10",
-    "typescript": "^7.0.2"
+    "typescript": "^6"
   },
   "prettier": {
     "semi": false,

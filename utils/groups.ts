@@ -1,7 +1,7 @@
-import { BarChartIcon } from '@sanity/icons/BarChart'
-import { BlockContentIcon } from '@sanity/icons/BlockContent'
-import { DocumentIcon } from '@sanity/icons/Document'
-import type { FieldGroupDefinition } from 'sanity'
+import {BarChartIcon} from '@sanity/icons/BarChart'
+import {BlockContentIcon} from '@sanity/icons/BlockContent'
+import {DocumentIcon} from '@sanity/icons/Document'
+import type {FieldGroupDefinition} from 'sanity'
 
 export const groups: FieldGroupDefinition[] = [
   {

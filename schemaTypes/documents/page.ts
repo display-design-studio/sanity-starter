@@ -41,7 +41,7 @@ export const page = defineType({
   preview: {
     select: {
       title: `title.${baseLanguage?.id}`,
-      slug: `slug.["${baseLanguage?.id}"].current`,
+      slug: `slug.${baseLanguage?.id}.current`,
     },
     prepare({title, slug}) {
       return {

@@ -15,7 +15,7 @@
  *   const home: HOME_QUERYResult = await client.fetch(HOME_QUERY)
  */
 
-import { defineQuery } from 'groq'
+import {defineQuery} from 'groq'
 
 // ─── Home ────────────────────────────────────────────────────────────────────
 
@@ -83,7 +83,7 @@ export const PAGES_QUERY = defineQuery(`
     _type,
     title,
     slug,
-    description,
+    description
   }
 `)
 

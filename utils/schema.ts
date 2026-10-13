@@ -1,4 +1,4 @@
-import type {Rule} from 'sanity'
+import type {RuleDef} from 'sanity'
 
 export const hiddenUnless =
   (requiredType: string) =>
@@ -7,7 +7,7 @@ export const hiddenUnless =
 
 export const requireWhen =
   (requiredType: string, message: string, check?: (value: unknown) => boolean) =>
-  (rule: Rule) =>
+  <T extends RuleDef<T, V>, V = unknown>(rule: T) =>
     rule.custom((value, context) => {
       const parent = context.parent as {type?: string} | undefined
       const passes = check ? check(value) : !!value

@@ -41,6 +41,9 @@ Install the [Sanity MCP server](https://www.sanity.io/docs/ai/mcp-server) to let
 - `deploy`: Deploy the Studio
 - `typegen`: Extract schema and generate TypeScript types
 - `typegen:watch`: Watch mode for type generation
+- `lint`: Run ESLint
+- `typecheck`: Run the TypeScript compiler without emitting
+- `format`: Format the codebase with Prettier
 
 ## Getting Started
 

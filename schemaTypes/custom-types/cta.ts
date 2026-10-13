@@ -61,7 +61,11 @@ export const cta = defineType({
           title: 'File',
           type: 'file',
           hidden: hiddenUnless('file'),
-          validation: requireWhen('file', 'File is required', (v) => !!(v as {asset?: unknown})?.asset),
+          validation: requireWhen(
+            'file',
+            'File is required',
+            (v) => !!(v as {asset?: unknown})?.asset,
+          ),
         }),
       ],
     }),

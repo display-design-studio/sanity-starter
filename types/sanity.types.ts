@@ -570,7 +570,7 @@ export type FOOTER_QUERY_RESULT = {
 
 // Source: queries/index.ts
 // Variable: PAGES_QUERY
-// Query: *[_type == "page"] | order(_createdAt asc) {    _id,    _type,    title,    slug,    description,  }
+// Query: *[_type == "page"] | order(_createdAt asc) {    _id,    _type,    title,    slug,    description  }
 export type PAGES_QUERY_RESULT = Array<{
   _id: string
   _type: 'page'
@@ -598,7 +598,7 @@ declare global {
     '\n  *[_type == "home"][0] {\n    _id,\n    _type,\n    title,\n    description,\n    content,\n    media,\n    cta,\n    seo\n  }\n': HOME_QUERY_RESULT
     '\n  *[_type == "header"][0] {\n    _id,\n    _type,\n    logo,\n    navigation[] {\n      label,\n      ref {\n        type,\n        internalRef->{_id, _type, slug},\n        externalRef,\n        fileRef{asset->}\n      }\n    }\n  }\n': HEADER_QUERY_RESULT
     '\n  *[_type == "footer"][0] {\n    _id,\n    _type,\n    logo,\n    companyInfo,\n    navigation[] {\n      label,\n      ref {\n        type,\n        internalRef->{_id, _type, slug},\n        externalRef,\n        fileRef{asset->}\n      }\n    },\n    socials[] {\n      label,\n      url\n    }\n  }\n': FOOTER_QUERY_RESULT
-    '\n  *[_type == "page"] | order(_createdAt asc) {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n  }\n': PAGES_QUERY_RESULT
+    '\n  *[_type == "page"] | order(_createdAt asc) {\n    _id,\n    _type,\n    title,\n    slug,\n    description\n  }\n': PAGES_QUERY_RESULT
     '\n  *[_type == "page" && slug[$lang].current == $slug][0] {\n    _id,\n    _type,\n    title,\n    slug,\n    description,\n    content,\n    seo\n  }\n': PAGE_BY_SLUG_QUERY_RESULT
   }
 }

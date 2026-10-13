@@ -10,6 +10,9 @@ bun run build        # Build Studio and extract + generate TypeScript types
 bun run deploy       # Deploy Studio to Sanity hosting
 bun run typegen      # Extract schema and regenerate types/sanity.types.ts (run after schema changes)
 bun run typegen:watch  # Watch mode for type generation
+bun run lint         # Lint with ESLint
+bun run typecheck    # Type-check with tsc
+bun run format       # Format with Prettier
 ```
 
 ## Environment Variables
@@ -46,7 +49,7 @@ Custom sidebar structure: **Site Navigation** (header + footer singletons), divi
 ### Presentation Tool (`presentation/resolve.ts`)
 Maps routes to document types for the visual editor:
 - `/` → `home` document
-- `/page/:slug` → `page` document matched by slug in the base language
+- `/:slug` → `page` document matched by slug in the base language
 
 ### GROQ Queries (`queries/index.ts`)
 Typed queries using `defineQuery` from `groq`. The variable name determines the generated Result type name (e.g. `HOME_QUERY` → `HOME_QUERYResult` in `types/sanity.types.ts`). After adding or modifying queries, run `bun run typegen`.
