@@ -1,7 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>sanity-io/renovate-config", "github>sanity-io/renovate-config:studio-v3"],
-  "dependencyDashboard": true,
+  "extends": [
+    "github>sanity-io/renovate-config",
+    "github>sanity-io/renovate-config:studio-v3"
+  ],
+  "dependencyDashboard": {
+    "enabled": true
+  },
   "dependencyDashboardApproval": false,
   "schedule": ["before 3am on Monday"],
   "timezone": "Europe/Rome",
