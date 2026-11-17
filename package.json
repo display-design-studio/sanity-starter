@@ -20,21 +20,21 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/icons": "^5.2.3",
-    "@sanity/language-filter": "^5.0.23",
-    "@sanity/vision": "^6.20.0",
+    "@sanity/icons": "^5.4.0",
+    "@sanity/language-filter": "^5.0.24",
+    "@sanity/vision": "^6.24.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "sanity": "^6.20.0",
-    "sanity-plugin-media": "^6.5.0",
+    "sanity": "^6.24.0",
+    "sanity-plugin-media": "^6.6.3",
     "styled-components": "^6.6.0"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^7.0.0",
-    "@types/node": "^26.6.5",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
-    "eslint": "^10.13.0",
-    "prettier": "^3.9.10",
+    "eslint": "^10.15.0",
+    "prettier": "^3.10.1",
     "typescript": "^6.0.3"
   },
   "prettier": {
